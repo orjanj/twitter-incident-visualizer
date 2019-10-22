@@ -42,6 +42,27 @@ The result should be something like this:
 ``You are connected to database "tiv" as user "tiv" via socket in "/var/run/postgresql" at port "5432".``
 
 
+8. Enable CGI in Apache (as ``root``)
+
+``# a2enmod cgi``
+
+9. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf``:
+
+```
+        <Directory /var/www/>
+            Options Indexes FollowSymLinks MultiViews ExecCGI
+            AllowOverride None
+            Order allow,deny
+            allow from all
+            AddHandler cgi-script .py
+         </Directory>
+```
+
+10. Restart Apache (as ``root``)
+
+``# systemctl restart apache2``
+
+
 ### Debian
 1. Elevate to ``root``.
 
@@ -80,3 +101,23 @@ The result should be something like this:
 The result should be something like this:
 
 ``You are connected to database "tiv" as user "tiv" via socket in "/var/run/postgresql" at port "5432".``
+
+9. Enable CGI in Apache (as ``root``)
+
+``# a2enmod cgi``
+
+10. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf``:
+
+```
+        <Directory /var/www/>
+            Options Indexes FollowSymLinks MultiViews ExecCGI
+            AllowOverride None
+            Order allow,deny
+            allow from all
+            AddHandler cgi-script .py
+         </Directory>
+```
+
+11. Restart Apache (as ``root``)
+
+``# systemctl restart apache2``
