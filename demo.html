@@ -1,2 +1,80 @@
-<style>* { margin:0px; padding:0px; }</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter incidient visualizer demo</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+			.circular--square {
+				border-radius:50%;
+			}
+
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+				font-size:14px;
+				vertical-align:text-top;
+      }
+			a,a:visited {
+				color:royalblue;
+				text-decoration:none;
+			}
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+
+				var locations = [
+					["<img class='circular--square' style='height:36px;width:36px' src='https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_bigger.jpeg' alt=politietinordland' /><a target='_blank' href='https://twitter.com/politinordland' title='Go to Twitter' style='font-weight:bold;color:#000'>Politiet i Nordland</a> <span style=\"color:#696969\">@politietinordland - 1t</span><br /><a target='_blank' href='https://twitter.com/hashtag/Rognan?src=hash' style='color:royalblue'>#Rognan</a>: <a target='_blank' href='https://twitter.com/Utrykningspol' style='color:royalblue'>@Utrykningspol</a> har gjennomført laserkontroll i Saksenvika, E6. 7 FF<br /> skrevet ut, høyeste 112 km/t i 80 sone.", 67.095260, 15.387364, 5],
+					["<img class='circular--square' style='height:36px;width:36px' src='https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_bigger.jpeg' alt=polititroms' /><a target='_blank' href='https://twitter.com/polititroms' title='Go to Twitter' style='font-weight:bold;color:#000'>Troms politidistrikt</a> <span style=\"color:#696969\">@polititroms - 9 min</span><br /><a target='_blank' href='https://twitter.com/hashtag/Sk%C3%B8elv?src=hash' style='color:royalblue'>#Sk&oslash;elv</a>: <a target='_blank' href='https://twitter.com/Utrykningspol' style='color:royalblue'>@Utrykningspol</a> har har hatt trafikkontroll på Fv 84 like øst for Skøelv. 7<br />forenklede forelegg (FF) og en anmeldelse da sistnevnte ikke ville vedta FF på<br />stedet. Høyeste målte hastighet 60 km/t i 50 sone.", 69.131819, 18.050360, 4],
+					["<img class='circular--square' style='height:36px;width:36px' src='https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_bigger.jpg' alt='oslopolitiops' /><a target='_blank' href='https://twitter.com/oslopolitiops' title='Go to Twitter' style='font-weight:bold;color:#000'>OPS Politiet Oslo</a> <span style=\"color:#696969\">@oslopolitiops - 22 min</span><br /><a target='_blank' href='https://twitter.com/hashtag/B%C3%A6rum?src=hash' style='color:royalblue'>#B&aelig;rum</a>. Bil kontrollert etter melding om vinglete kjøring på E18.<br />Mistanke om beruselse på fører. Pasasasjer blir også innbragt for nærmere id-<br />sjekk.", 59.910554, 10.744012, 3],
+					["<img class='circular--square' style='height:36px;width:36px' src='https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_bigger.jpg' alt='oslopolitiops' /><a target='_blank' href='https://twitter.com/oslopolitiops' title='Go to Twitter' style='font-weight:bold;color:#000'>OPS Politiet Oslo</a> <span style=\"color:#696969\">@oslopolitiops - 4 t</span><br /><a target='_blank' href='https://twitter.com/hashtag/Oslo?src=hash' style='color:royalblue'>#Oslo</a>. Tollbugata. En person er pågrepet etter og ha stjålet en sekk med noe datautstyr fra stedet. Pågrepet i nærheten. Kjøres arresten.", 59.958805, 10.482855, 2],
+					["<img class='circular--square' style='height:36px;width:36px' src='https://pbs.twimg.com/profile_images/1848373139/logo_bigger.JPG' alt='PolitiTrondelag' /><a target='_blank' href='https://twitter.com/polititrondelag' title='Go to Twitter' style='font-weight:bold;color:#000'>Politiet i Trøndelag</a> <span style=\"color:#696969\">@PolitiTrondelag - t t</span><br /><a target='_blank' href='https://twitter.com/hashtag/Grong?src=hash' style='color:royalblue'>#Grong</a>. På  E-6 nord for Harran har et vogntog kjørt av veien. Fører mener han<br />er uskadd. Brann og politi rykker ut", 64.560540, 12.485183, 1]
+				];
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 66.321744, lng: 12.815879},
+          zoom: 5
+        });
+
+
+        var infowindow = new google.maps.InfoWindow();
+				var marker, i;
+
+				for (i = 0; i < locations.length; i++) {
+		      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+						map: map
+					});
+
+					google.maps.event.addListener(marker, 'click', (function(marker, i) {
+						return function() {
+							infowindow.setContent(locations[i][0]);
+							infowindow.open(map, marker);
+						}
+					})(marker, i));
+				}
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSx31rj9HHzmpuFwo6KqoB7Cx4MWsBr0Q&callback=initMap&libraries=drawing"
+    async defer></script>
+  </body>
+</html>
+
+
+<!--
 <iframe style="width:100%;height:100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCSx31rj9HHzmpuFwo6KqoB7Cx4MWsBr0Q&q=Europe" allowfullscreen></iframe>
+-->
+<!--
+KEY
+AIzaSyCSx31rj9HHzmpuFwo6KqoB7Cx4MWsBr0Q
+-->
