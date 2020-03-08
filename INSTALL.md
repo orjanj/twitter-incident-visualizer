@@ -9,44 +9,98 @@ Installation
 ### Ubuntu
 1. Update repo and install of dependencies as elevated user ``root``.
 
-``$ sudo apt-get update && sudo apt-get install apache2 git python3 postgresql postgresql-contrib -y``
+``# sudo apt-get update && sudo apt-get install apache2 git python3 postgresql postgresql-contrib python3-dev libpq-dev python-pip curl ca-certificates -y``
 
-2. Add a Linux user for use with this project. Let's call the user ``tiv`` and set a password.
+2. Add a Linux user for use with this project. Let's call the user ``tiv`` and set a password. (as ``root``)
 
-``$ sudo useradd -m -d /home/tiv -s /bin/bash tiv && passwd tiv``
+``# sudo useradd -m -d /home/tiv -s /bin/bash tiv && passwd tiv``
 
-3. Delevate to the ``postgres`` user.
+3. Get key for PostgreSQL and add it to the apt key sources keyring. (as ``root``)
 
-``$ sudo -i -u postgres``
+``# curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -``
 
-4. Add a database user. Name the user the same as earlier added.
+4. Append PostgreSQL repo to the apt sources list. (as ``root``)
 
-``$ createuser --interactive``
+``# echo deb http://apt.postgresql.org/pub/repos/apt bionic-pgdg main > /etc/apt/sources.list.d/pgdg.list``
 
-5. Create a database for the user
+5. Install pgAdmin and follow the instructions (this requires that you have a desktop installed, if not; install `lightdm` also) (as ``root``)
 
-``$ createdb tiv``
+``# apt-get install pgadmin4 -y``
 
-6. Delevate to the ``tiv`` user.
+6. Edit the content in the pg_hba.conf file (as ``root``)
+``# nano /etc/postgresql/10/main/pg_hba.conf``
+There is a line in the file like, change this from:
 
-``$ sudo -i -u tiv``
+```local		all		postgres		peer```
 
-7. Test database connection with the ``tiv`` user
+to this:
 
-``$ psql``
+```local		all		postgres,tiv		md5```
 
-``tiv=> \conninfo``
+7. Start pgAdmin and follow the instructions (if any). (as ``root``)
 
-The result should be something like this:
+``# pgadmin4`` (an admin password must at least be set)
 
-``You are connected to database "tiv" as user "tiv" via socket in "/var/run/postgresql" at port "5432".``
+8. Create an user/role for the user `tiv` and an database `tiv`.
+
+8.1 Fill in `tiv` in the general tab.
+
+8.2 Fill in an password.
+
+8.3 Privileges: Choose `Yes` on `Can login?` and `Create databases?`.
 
 
-8. Enable CGI in Apache (as ``root``)
+Alternatively you can insert this by using an script (before this, make sure that you have the `create_tiv_user.sql` script in the `postgres` home directory with the correct file permissions).
+
+If you are not going to use the script, skip this step.
+
+8.4 Switch to the `postgres` user and insert the script.
+
+```
+# su - postgres
+$ psql < create_tiv_user.sql
+```
+
+You should be prompted with an password, then the role should have been created.
+
+8.5 Right-click on databases and create an database for the `tiv` user.
+
+Insert database name `tiv`, owner `tiv` and create.
+
+
+Alternatively you can insert this by using an script (before this, make sure that you have the `create_tiv_db.sql` script in the `postgres` home directory with the correct file permissions).
+
+If you are not going to use the script, skip this step.
+
+8.6 Switch to the `postgres` user and insert the script.
+
+```
+# su - postgres
+$ psql < create_tiv_db.sql
+```
+
+9. Switch to the `tiv` user and create an database for the user. Then insert the database structure from the file `create_table_structure.sql`. The file `create_table_structure.sql` must be placed in the `tiv` home directory with the correct file permissions and ownership.
+
+```
+# mv <path/to/file>/create_table_structure.sql /home/tiv
+# chown tiv:tiv /home/tiv/create_table_structure.sql
+# su - tiv
+$ psql < create_table_structure.sql
+```
+
+10. Install Psycopg2 for Python (as ``root``)
+
+``# pip install psycopg2``
+
+11. Restart the PostgreSQL service (as ``root``)
+
+``# systemctl restart postgresql``
+
+12. Enable the CGI module in Apache (as ``root``)
 
 ``# a2enmod cgi``
 
-9. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf``:
+13. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf`` to allow Python files to be runned in Apache. (as ``root``)
 
 ```
         <Directory /var/www/>
@@ -58,66 +112,13 @@ The result should be something like this:
          </Directory>
 ```
 
-10. Restart Apache (as ``root``)
+14. Restart Apache (as ``root``)
 
 ``# systemctl restart apache2``
 
+15. Navgate to the Apache Docroot
 
-### Debian
-1. Elevate to ``root``.
+``# cd /var/www/html``
 
-``$ su``
-
-2. Update repo and install of dependencies.
-
-``# apt-get update && apt-get install apache2 git python3 postgresql postgresql-contrib -y ``
-
-3. Add a Linux user for use with this project. Let's call the user ``tiv`` and set a password.
-
-``# useradd -m -d /home/tiv -s /bin/bash tiv && passwd tiv``
-
-4. Delevate to the ``postgres`` user.
-
-``# su - postgres``
-
-5. Add a database user. Name the user the same as earlier added.
-
-``$ createuser --interactive``
-
-6. Create a database for the user
-
-``$ createdb tiv``
-
-7. Delevate to the ``tiv`` user.
-
-``$ sudo -i -u tiv``
-
-8. Test database connection with the ``tiv`` user
-
-``$ psql``
-
-``tiv=> \conninfo``
-
-The result should be something like this:
-
-``You are connected to database "tiv" as user "tiv" via socket in "/var/run/postgresql" at port "5432".``
-
-9. Enable CGI in Apache (as ``root``)
-
-``# a2enmod cgi``
-
-10. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf``:
-
-```
-        <Directory /var/www/>
-            Options Indexes FollowSymLinks MultiViews ExecCGI
-            AllowOverride None
-            Order allow,deny
-            allow from all
-            AddHandler cgi-script .py
-         </Directory>
-```
-
-11. Restart Apache (as ``root``)
-
-``# systemctl restart apache2``
+16. Clone the newest version of the twitter-incident-visualizer repo to the web server
+``# git clone https://github.com/orjanj/twitter-incident-visualizer.git``
