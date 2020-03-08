@@ -1,27 +1,68 @@
-create table tweets(
- tweet_id serial primary key not null,
- account_id int not null,
- tweet_time int default 0,
- tweet_content text,
- tweet_place char(100),
- geo_id int,
- tweet_hashtags char(255)
-);
+-- Table: public.account
 
-create table account(
- account_id serial primary key not null,
- account_name char(50) not null,
- account_url text not null,
- account_text text,
- account_reg_date int default 0,
- account_webpage char(255),
- account_pic_url char(255),
- account_verified boolean
-);
+-- DROP TABLE public.account;
 
-create table geo(
- geo_id serial primary key not null,
- geo_name char(100),
- geo_lat int,
- geo_long int
-);
+CREATE TABLE public.account
+(
+    account_id integer NOT NULL DEFAULT nextval('account_account_id_seq'::regclass),
+    account_name character(50) COLLATE pg_catalog."default" NOT NULL,
+    account_url text COLLATE pg_catalog."default" NOT NULL,
+    account_text text COLLATE pg_catalog."default",
+    account_reg_date integer DEFAULT 0,
+    account_webpage character(255) COLLATE pg_catalog."default",
+    account_pic_url character(255) COLLATE pg_catalog."default",
+    account_verified boolean,
+    CONSTRAINT account_pkey PRIMARY KEY (account_id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.account
+    OWNER to tiv;
+
+
+-- Table: public.geo
+
+-- DROP TABLE public.geo;
+
+CREATE TABLE public.geo
+(
+    geo_id integer NOT NULL DEFAULT nextval('geo_geo_id_seq'::regclass),
+    geo_name character(100) COLLATE pg_catalog."default",
+    geo_lat integer,
+    geo_long integer,
+    CONSTRAINT geo_pkey PRIMARY KEY (geo_id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.geo
+    OWNER to tiv;
+
+
+-- Table: public.tweets
+
+-- DROP TABLE public.tweets;
+
+CREATE TABLE public.tweets
+(
+    tweet_id integer NOT NULL DEFAULT nextval('tweets_tweet_id_seq'::regclass),
+    account_id integer NOT NULL,
+    tweet_time integer DEFAULT 0,
+    tweet_content text COLLATE pg_catalog."default",
+    tweet_place character(100) COLLATE pg_catalog."default",
+    geo_id integer,
+    tweet_hashtags character(255) COLLATE pg_catalog."default",
+    CONSTRAINT tweets_pkey PRIMARY KEY (tweet_id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.tweets
+    OWNER to tiv;
