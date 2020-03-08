@@ -92,6 +92,8 @@ $ psql < create_table_structure.sql
 
 ``# pip install psycopg2 python-twitter``
 
+Follow also the installation steps here: https://github.com/bear/python-twitter
+
 11. Restart the PostgreSQL service (as ``root``)
 
 ``# systemctl restart postgresql``
