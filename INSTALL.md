@@ -88,9 +88,9 @@ $ psql < create_tiv_db.sql
 $ psql < create_table_structure.sql
 ```
 
-10. Install Psycopg2 for Python (as ``root``)
+10. Install Psycopg2 and Twitter for Python (as ``root``)
 
-``# pip install psycopg2``
+``# pip install psycopg2 python-twitter``
 
 11. Restart the PostgreSQL service (as ``root``)
 
