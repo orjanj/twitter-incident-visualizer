@@ -9,7 +9,7 @@ Installation
 ### Ubuntu
 1. Update repo and install of dependencies as elevated user ``root``.
 
-``# sudo apt-get update && sudo apt-get install apache2 git python3 postgresql postgresql-contrib python3-dev libpq-dev python-pip curl ca-certificates -y``
+``# sudo apt-get update && sudo apt-get install apache2 git python3 postgresql postgresql-contrib python3-dev libpq-dev python-pip curl ca-certificates python3-pip -y``
 
 2. Add a Linux user for use with this project. Let's call the user ``tiv`` and set a password. (as ``root``)
 
@@ -90,7 +90,7 @@ $ psql < create_table_structure.sql
 
 10. Install Psycopg2 and Twitter for Python (as ``root``)
 
-``# pip install psycopg2 python-twitter``
+``# pip3 install psycopg2 python-twitter``
 
 Follow also the installation steps here: https://github.com/bear/python-twitter
 
