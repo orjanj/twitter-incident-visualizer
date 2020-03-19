@@ -13,7 +13,7 @@ Installation
 
 2. Add a Linux user for use with this project. Let's call the user ``tiv`` and set a password. (as ``root``)
 
-``# sudo useradd -m -d /home/tiv -s /bin/bash tiv && passwd tiv``
+``# sudo useradd -m -d /home/tiv -s /bin/bash tiv && sudo passwd tiv``
 
 3. Get key for PostgreSQL and add it to the apt key sources keyring. (as ``root``)
 
