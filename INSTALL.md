@@ -52,7 +52,7 @@ to this:
 
 8. Start pgAdmin and follow the instructions (if any).
 ```
-root@host:~# pgadmin4`` (an admin password must at least be set)
+root@host:~# pgadmin4 (an admin password must at least be set)
 ```
 
 9. Create an user/role for the user `tiv` and an database `tiv`.
