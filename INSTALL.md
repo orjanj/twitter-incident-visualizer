@@ -7,28 +7,41 @@
 Installation
 ---------------
 ### Ubuntu
-1. Update repo and install of dependencies as elevated user ``root``.
 
-``# sudo apt-get update && sudo apt-get install apache2 git python3 postgresql postgresql-contrib python3-dev libpq-dev python-pip curl ca-certificates python3-pip -y``
+1. Elevate first to ``root``.
+```
+user@host:~$ sudo -i
+```
+2. Update repo and install of dependencies.
+```
+root@host:~# apt-get update && apt-get install apache2 git python3 postgresql postgresql-contrib python3-dev libpq-dev python-pip curl ca-certificates python3-pip -y
+```
 
-2. Add a Linux user for use with this project. Let's call the user ``tiv`` and set a password. (as ``root``)
+3. Add a Linux user for use with this project. Let's call the user ``tiv`` and set a password.
+```
+root@host:~# useradd -m -d /home/tiv -s /bin/bash tiv && passwd tiv``
+```
 
-``# sudo useradd -m -d /home/tiv -s /bin/bash tiv && sudo passwd tiv``
+4. Get key for PostgreSQL and add it to the apt key sources keyring.
+```
+root@host:~# curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+```
 
-3. Get key for PostgreSQL and add it to the apt key sources keyring. (as ``root``)
+5. Append PostgreSQL repo to the apt sources list.
+```
+root@host:~# echo deb http://apt.postgresql.org/pub/repos/apt bionic-pgdg main > /etc/apt/sources.list.d/pgdg.list
+```
 
-``# curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -``
+6. Install pgAdmin and follow the instructions (this requires that you have a desktop installed, if not; install `lightdm` also)
+```
+root@host:~# apt-get update && apt-get install pgadmin4 -y
+```
 
-4. Append PostgreSQL repo to the apt sources list. (as ``root``)
+7. Edit the content in the pg_hba.conf file.
+```
+root@host:~# nano /etc/postgresql/10/main/pg_hba.conf
+```
 
-``# echo deb http://apt.postgresql.org/pub/repos/apt bionic-pgdg main > /etc/apt/sources.list.d/pgdg.list``
-
-5. Install pgAdmin and follow the instructions (this requires that you have a desktop installed, if not; install `lightdm` also) (as ``root``)
-
-``# apt-get install pgadmin4 -y``
-
-6. Edit the content in the pg_hba.conf file (as ``root``)
-``# nano /etc/postgresql/10/main/pg_hba.conf``
 There is a line in the file like, change this from:
 
 ```local		all		postgres		peer```
@@ -37,33 +50,34 @@ to this:
 
 ```local		all		postgres,tiv		md5```
 
-7. Start pgAdmin and follow the instructions (if any). (as ``root``)
+8. Start pgAdmin and follow the instructions (if any).
+```
+root@host:~# pgadmin4`` (an admin password must at least be set)
+```
 
-``# pgadmin4`` (an admin password must at least be set)
+9. Create an user/role for the user `tiv` and an database `tiv`.
 
-8. Create an user/role for the user `tiv` and an database `tiv`.
+9.1 Fill in `tiv` in the general tab.
 
-8.1 Fill in `tiv` in the general tab.
+9.2 Fill in an password.
 
-8.2 Fill in an password.
-
-8.3 Privileges: Choose `Yes` on `Can login?` and `Create databases?`.
+9.3 Privileges: Choose `Yes` on `Can login?` and `Create databases?`.
 
 
 Alternatively you can insert this by using an script (before this, make sure that you have the `create_tiv_user.sql` script in the `postgres` home directory with the correct file permissions).
 
 If you are not going to use the script, skip this step.
 
-8.4 Switch to the `postgres` user and insert the script.
+9.4 Switch to the `postgres` user and insert the script.
 
 ```
-# su - postgres
-$ psql < create_tiv_user.sql
+root@host:~# su - postgres
+postgres@host:̃~$ psql < create_tiv_user.sql
 ```
 
 You should be prompted with an password, then the role should have been created.
 
-8.5 Right-click on databases and create an database for the `tiv` user.
+9.5 Right-click on databases and create an database for the `tiv` user.
 
 Insert database name `tiv`, owner `tiv` and create.
 
@@ -72,37 +86,41 @@ Alternatively you can insert this by using an script (before this, make sure tha
 
 If you are not going to use the script, skip this step.
 
-8.6 Switch to the `postgres` user and insert the script.
+9.6 Switch to the `postgres` user and insert the script.
 
 ```
-# su - postgres
-$ psql < create_tiv_db.sql
+root@host:~# su - postgres
+postgres@host:~$ psql < create_tiv_db.sql
 ```
 
-9. Switch to the `tiv` user and create an database for the user. Then insert the database structure from the file `create_table_structure.sql`. The file `create_table_structure.sql` must be placed in the `tiv` home directory with the correct file permissions and ownership.
+10. Switch to the `tiv` user and create an database for the user. Then insert the database structure from the file `create_table_structure.sql`. The file `create_table_structure.sql` must be placed in the `tiv` home directory with the correct file permissions and ownership.
 
 ```
-# mv <path/to/file>/create_table_structure.sql /home/tiv
-# chown tiv:tiv /home/tiv/create_table_structure.sql
-# su - tiv
-$ psql < create_table_structure.sql
+root@host:~# mv <path/to/file>/create_table_structure.sql /home/tiv
+root@host:~# chown tiv:tiv /home/tiv/create_table_structure.sql
+root@host:~# su - tiv
+postgres@host:~$ psql < create_table_structure.sql
 ```
 
-10. Install Psycopg2 and Twitter for Python (as ``root``)
+11. Install Psycopg2 and Twitter for Python.
 
-``# pip3 install psycopg2 python-twitter``
+```
+root@host:~# pip3 install psycopg2 python-twitter
+```
 
-Follow also the installation steps here: https://github.com/bear/python-twitter
+Follow also the installation steps here: https://github.com/bear/python-twitter#getting-the-code
 
-11. Restart the PostgreSQL service (as ``root``)
+12. Restart the PostgreSQL service.
+```
+root@host:~# systemctl restart postgresql
+```
 
-``# systemctl restart postgresql``
+13. Enable the CGI module in Apache.
+```
+root@host:~# a2enmod cgi
+```
 
-12. Enable the CGI module in Apache (as ``root``)
-
-``# a2enmod cgi``
-
-13. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf`` to allow Python files to be runned in Apache. (as ``root``)
+14. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf`` to allow Python files to be runned in Apache. (as ``root``)
 
 ```
         <Directory /var/www/>
@@ -114,13 +132,19 @@ Follow also the installation steps here: https://github.com/bear/python-twitter
          </Directory>
 ```
 
-14. Restart Apache (as ``root``)
+15. Restart Apache.
 
-``# systemctl restart apache2``
+```
+root@host:~# systemctl restart apache2
+```
 
-15. Navgate to the Apache Docroot
 
-``# cd /var/www/html``
+16. Change owner for the Apache Docroot to your user.
+```
+root@host:/var/www# chown -hR <your user>:<your group, same as username as usual> /var/www/html
+```
 
-16. Clone the newest version of the twitter-incident-visualizer repo to the web server
-``# git clone https://github.com/orjanj/twitter-incident-visualizer.git``
+17. Clone the newest version of the twitter-incident-visualizer repo to the web server
+```
+root@host:~# git clone https://github.com/orjanj/twitter-incident-visualizer.git
+```
