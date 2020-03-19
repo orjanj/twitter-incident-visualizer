@@ -50,9 +50,9 @@ to this:
 
 ```local		all		postgres,tiv		md5```
 
-8. Start pgAdmin and follow the instructions (if any).
+8. Start pgAdmin and follow the instructions (if any). Can not be run as root
 ```
-root@host:~# pgadmin4 (an admin password must at least be set)
+user@host:~$ pgadmin4 (an admin password must at least be set)
 ```
 
 9. Create an user/role for the user `tiv` and an database `tiv`.
