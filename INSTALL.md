@@ -32,7 +32,7 @@ root@host:~# curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key a
 root@host:~# echo deb http://apt.postgresql.org/pub/repos/apt bionic-pgdg main > /etc/apt/sources.list.d/pgdg.list
 ```
 
-6. Install pgAdmin and follow the instructions (this requires that you have a desktop installed, if not; install `lightdm` also)
+6. Install pgAdmin and follow the instructions (this requires that you have a desktop environment installed, if not; install `lightdm` or `gdm` also, or something else if you prefer)
 ```
 root@host:~# apt-get update && apt-get install pgadmin4 -y
 ```
@@ -54,22 +54,24 @@ to this:
 ```
 user@host:~$ pgadmin4 (an admin password must at least be set)
 ```
-9. Create Server 
-General
+
+9. Click on Create Server
 ```
-Name `Name of database`
-```
-Connection
-```
+General tab
+
+Name: Name of database
+
+Connection tab
+
 Hostname/adresse: 127.0.0.1
-port: 5432
+Port: 5432
 Maintenance database: postgres
-username: postgres
+Username: postgres
 Password: The password you have created
-save password?: Yes 
+Save password?: Yes 
 ```
 
-10. Create an user/role for the user `tiv` and an database `tiv`.
+10. Create an user/role for the user `tiv` and an database `tiv`. If you prefer to do this by the premade scripts, see point 10.4
 
 10.1 Fill in `tiv` in the general tab.
 
@@ -86,7 +88,9 @@ If you are not going to use the script, skip this step.
 
 ```
 root@host:~# su - postgres
-postgres@host:̃~$ psql < create_tiv_user.sql
+postgres@host:~$ git clone https://github.com/orjanj/twitter-incident-visualizer.git
+postgres@host:~$ cd twitter-incident-visualizer/sql/
+postgres@host:̃~/twitter-incident-visualizer/sql$ psql < create_tiv_user.sql
 ```
 
 You should be prompted with an password, then the role should have been created.
@@ -103,17 +107,15 @@ If you are not going to use the script, skip this step.
 10.6 Switch to the `postgres` user and insert the script.
 
 ```
-root@host:~# su - postgres
-postgres@host:~$ psql < create_tiv_db.sql
+postgres@host:~/twitter-incident-visualizer/sql$ psql < create_tiv_db.sql
 ```
 
 11. Switch to the `tiv` user and create an database for the user. Then insert the database structure from the file `create_table_structure.sql`. The file `create_table_structure.sql` must be placed in the `tiv` home directory with the correct file permissions and ownership.
 
 ```
-root@host:~# mv <path/to/file>/create_table_structure.sql /home/tiv
-root@host:~# chown tiv:tiv /home/tiv/create_table_structure.sql
-root@host:~# su - tiv
-postgres@host:~$ psql < create_table_structure.sql
+tiv@host:~$ git clone https://github.com/orjanj/twitter-incident-visualizer.git
+tiv@host:~$ cd twitter-incident-visualizer/sql/
+tiv@host:̃~/twitter-incident-visualizer/sql$ psql < create_table_structure.sql
 ```
 
 12. Install Psycopg2 and Twitter for Python.
@@ -152,7 +154,6 @@ root@host:~# a2enmod cgi
 root@host:~# systemctl restart apache2
 ```
 
-
 17. Change owner for the Apache Docroot to your user.
 ```
 root@host:/var/www# chown -hR <your user>:<your group, same as username as usual> /var/www/html
@@ -160,5 +161,5 @@ root@host:/var/www# chown -hR <your user>:<your group, same as username as usual
 
 18. Clone the newest version of the twitter-incident-visualizer repo to the web server
 ```
-root@host:~# git clone https://github.com/orjanj/twitter-incident-visualizer.git
+root@host:/var/www/html# git clone https://github.com/orjanj/twitter-incident-visualizer.git
 ```
