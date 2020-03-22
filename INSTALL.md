@@ -54,21 +54,35 @@ to this:
 ```
 user@host:~$ pgadmin4 (an admin password must at least be set)
 ```
+9. Create Server 
+General
+```
+Name `Name of database`
+```
+Connection
+```
+Hostname/adresse: 127.0.0.1
+port: 5432
+Maintenance database: postgres
+username: postgres
+Password: The password you have created
+save password?: Yes 
+```
 
-9. Create an user/role for the user `tiv` and an database `tiv`.
+10. Create an user/role for the user `tiv` and an database `tiv`.
 
-9.1 Fill in `tiv` in the general tab.
+10.1 Fill in `tiv` in the general tab.
 
-9.2 Fill in an password.
+10.2 Fill in an password.
 
-9.3 Privileges: Choose `Yes` on `Can login?` and `Create databases?`.
+10.3 Privileges: Choose `Yes` on `Can login?` and `Create databases?`.
 
 
 Alternatively you can insert this by using an script (before this, make sure that you have the `create_tiv_user.sql` script in the `postgres` home directory with the correct file permissions).
 
 If you are not going to use the script, skip this step.
 
-9.4 Switch to the `postgres` user and insert the script.
+10.4 Switch to the `postgres` user and insert the script.
 
 ```
 root@host:~# su - postgres
@@ -77,7 +91,7 @@ postgres@host:̃~$ psql < create_tiv_user.sql
 
 You should be prompted with an password, then the role should have been created.
 
-9.5 Right-click on databases and create an database for the `tiv` user.
+10.5 Right-click on databases and create an database for the `tiv` user.
 
 Insert database name `tiv`, owner `tiv` and create.
 
@@ -86,14 +100,14 @@ Alternatively you can insert this by using an script (before this, make sure tha
 
 If you are not going to use the script, skip this step.
 
-9.6 Switch to the `postgres` user and insert the script.
+10.6 Switch to the `postgres` user and insert the script.
 
 ```
 root@host:~# su - postgres
 postgres@host:~$ psql < create_tiv_db.sql
 ```
 
-10. Switch to the `tiv` user and create an database for the user. Then insert the database structure from the file `create_table_structure.sql`. The file `create_table_structure.sql` must be placed in the `tiv` home directory with the correct file permissions and ownership.
+11. Switch to the `tiv` user and create an database for the user. Then insert the database structure from the file `create_table_structure.sql`. The file `create_table_structure.sql` must be placed in the `tiv` home directory with the correct file permissions and ownership.
 
 ```
 root@host:~# mv <path/to/file>/create_table_structure.sql /home/tiv
@@ -102,7 +116,7 @@ root@host:~# su - tiv
 postgres@host:~$ psql < create_table_structure.sql
 ```
 
-11. Install Psycopg2 and Twitter for Python.
+12. Install Psycopg2 and Twitter for Python.
 
 ```
 root@host:~# pip3 install psycopg2 python-twitter
@@ -110,17 +124,17 @@ root@host:~# pip3 install psycopg2 python-twitter
 
 Follow also the installation steps here: https://github.com/bear/python-twitter#getting-the-code
 
-12. Restart the PostgreSQL service.
+13. Restart the PostgreSQL service.
 ```
 root@host:~# systemctl restart postgresql
 ```
 
-13. Enable the CGI module in Apache.
+14. Enable the CGI module in Apache.
 ```
 root@host:~# a2enmod cgi
 ```
 
-14. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf`` to allow Python files to be runned in Apache. (as ``root``)
+15. Insert the following lines below ``CustomLog`` in ``/etc/apache2/sites-enabled/000-default.conf`` to allow Python files to be runned in Apache. (as ``root``)
 
 ```
         <Directory /var/www/>
@@ -132,19 +146,19 @@ root@host:~# a2enmod cgi
          </Directory>
 ```
 
-15. Restart Apache.
+16. Restart Apache.
 
 ```
 root@host:~# systemctl restart apache2
 ```
 
 
-16. Change owner for the Apache Docroot to your user.
+17. Change owner for the Apache Docroot to your user.
 ```
 root@host:/var/www# chown -hR <your user>:<your group, same as username as usual> /var/www/html
 ```
 
-17. Clone the newest version of the twitter-incident-visualizer repo to the web server
+18. Clone the newest version of the twitter-incident-visualizer repo to the web server
 ```
 root@host:~# git clone https://github.com/orjanj/twitter-incident-visualizer.git
 ```
