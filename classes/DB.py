@@ -1,25 +1,50 @@
 #!/usr/bin/python3
 import psycopg2
-try:
-  connection = psycopg2.connect(user = "tiv", password = "tiv", host = "127.0.0.1", port = "5432", database = "tiv")
+from Config import Config as Config # TODO: Make it prettier
 
-  cursor = connection.cursor()
+class DB():
+  """ DB initializes and manipulates PostgreSQL databases."""
+# https://codereview.stackexchange.com/questions/134535/a-class-to-create-and-modify-sqlite3-databases-with-a-terminal
+  def __init__(self, statements=None):
+    """ Initialize a new or connect to an existing database.
+    Accept setup statements to be executed.
+    :return: none
+    """
+    config = Config()
+    self.config_param = config.getConfigParameter('postgresql')
 
-  # Print PostgreSQL Connection properties
-  print(connection.get_dsn_parameters(), "\n")
+    if statements is None:
+      statements = []
+    else:
+      self.statements = statements
 
-  # Print PostgreSQL version
-  cursor.execute("SELECT version();")
-  record = cursor.fetchone()
-  print("You are connected to - ", record, "\n")
+  def connect(self):
+    """ Connect to the PostgreSQL database. """
+#    self.connection = psycopg2.connect(user = self.config_param['user'],password = self.config_param['passwd'],host = self.config_param['host'],port = self.config_param['port'],database = self.config_param['dbname'])
+#    self.cursor = self.connection.cursor()
+#    self.connected = True
+#    self.statement = ''
 
-except (Exception, psycopg2.Error) as error:
-  print("Error while connecting to PostgreSQL", error)
+  def close(self):
+    """ Close the PostgreSQL database connection. """
+#    self.connection.commit()
+#    self.connection.close()
+#    self.connected = False
 
-finally:
-  # closing database conenction
-  if(connection):
-    cursor.close()
-    connection.close()
-    print("PostgreSQL connection is closed")
+  def insertQuery(statement):
+    """ Insert data to DB. """
 
+  def updateQuery(statement):
+    """ Update data in DB. """
+
+  def deleteQuery(statement):
+    """ Delete data from DB. """
+
+  def validateConnection(self):
+    """
+    Connection validation to PostgreSQL DB.
+    :return: credential information (?)
+    """
+
+db = DB()
+db.connect()

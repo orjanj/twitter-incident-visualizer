@@ -1,0 +1,20 @@
+postgresql:
+  host: localhost
+  user: tiv
+  passwd: tiv
+  dbname: tiv
+  port: 5432
+
+twitter:
+  consumer_key: Err7UwBle9Q6oVHwzfCygGnG2
+  consumer_secret: k4acSlMEgg7UCo0FvPKwt14LIuDM8wk4oT4UuivgtmOtqGbN10
+  access_token_key: 1216480282192285696-3FTTZbSr0ZRletE4wkAW6g2nS7XO46
+  access_token_secret: 3VnrbENbyP0ax89nyAHlud8e3Lifhc4CnnULZmsZbWI5o
+
+gmaps:
+  api_key: AIzaSyCSx31rj9HHzmpuFwo6KqoB7Cx4MWsBr0Q
+
+tweet_storage:
+  directory: '/var/www/tweet_dumps'
+  default_filename: 'tweet-'
+  default_file_extension: 'json'

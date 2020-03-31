@@ -1,36 +1,75 @@
-#!/usr/bin/python3
-#from twitter import *
+#!/usr/bin/python
 import twitter
-#consumer_key = 'Err7UwBle9Q6oVHwzfCygGnG2'
-#consumer_secret = 'k4acSlMEgg7UCo0FvPKwt14LIuDM8wk4oT4UuivgtmOtqGbN10'
-#access_token_key = '1216480282192285696-3FTTZbSr0ZRletE4wkAW6g2nS7XO46'
-#access_token_secret = '3VnrbENbyP0ax89nyAHlud8e3Lifhc4CnnULZmsZbWI5o'
+from Config import Config # TODO: Make it prettier
+from DB import DB # TODO: Make it prettier
+
+class TIVTwitter:
+    """ Base class for connecting and fetching data from Twitter API. """
+
+    def __init__(self):
+        """ Instance constructor
+        :return: none
+        """
+        config = Config()
+        config_param = config.getConfigParameter('twitter')
+        self.API = twitter.Api(consumer_key = config_param['consumer_key'],
+                      consumer_secret = config_param['consumer_secret'],
+                      access_token_key = config_param['access_token_key'],
+                      access_token_secret = config_param['access_token_secret'])
+
+    def validateConnection(self):
+        """
+        Connection validation to Twitter API.
+        :return: credential information (json)
+        """
+        print(self.API.VerifyCredentials())
+
+    def getTweet(self, query_string):
+        """ Get Tweet information from Twitter.
+        :return: xxx
+        :return: xxx
+        :return: xxx
+        :return: xxx
+        :return: xxx
+        :return: xxx
+        """
+        # TODO: Use `python-twitter` for this
+
+    def getTweets(self, query_string):
+        """ Get Tweet information from Twitter.
+        :return: xxx
+        :return: xxx
+        :return: xxx
+        :return: xxx
+        :return: xxx
+        :return: xxx
+        """
+        # TODO: Use `python-twitter` for this
+
+    def getAccountInfo(self, tweet_data):
+        """ Get Twitter account information.
+        :param: tweet_data (json)
+        :return: account_name
+        :return: account_url
+        :return: account_text
+        :return: account_reg_date
+        :return: account_webpage
+        :return: account_pic_url
+        :return: account_verified
+        """
+
+    def insertTweetToDB(self, account_name, hash_tag, tweet_content):
+        """ Insertion of tweet(s) to PostgreSQL DB.
+        :params: tweet_data (json)
+        :return: xxx
+        """
+        db = DB()
+        statement = ''
+        db.insertQuery()
 
 
 
 
-api = twitter.Api(consumer_key='Err7UwBle9Q6oVHwzfCygGnG2',
-  consumer_secret='k4acSlMEgg7UCo0FvPKwt14LIuDM8wk4oT4UuivgtmOtqGbN10',
-    access_token_key='1216480282192285696-3FTTZbSr0ZRletE4wkAW6g2nS7XO46',
-    access_token_secret='3VnrbENbyP0ax89nyAHlud8e3Lifhc4CnnULZmsZbWI5o')
-
-#twitter = Twitter(auth=OAuth('Err7UwBle9Q6oVHwzfCygGnG2', 'k4acSlMEgg7UCo0FvPKwt14LIuDM8wk4oT4UuivgtmOtqGbN10', '1216480282192285696-3FTTZbSr0ZRletE4wkAW6g2nS7XO46', '3VnrbENbyP0ax89nyAHlud8e3Lifhc4CnnULZmsZbWI5o'))
-print(api.VerifyCredentials())
-
-
-
-
-
-
-#import twitter
-#consumer_key = 'Err7UwBle9Q6oVHwzfCygGnG2'
-#consumer_secret = 'k4acSlMEgg7UCo0FvPKwt14LIuDM8wk4oT4UuivgtmOtqGbN10'
-#access_token_key = '1216480282192285696-3FTTZbSr0ZRletE4wkAW6g2nS7XO46'
-#access_token_secret = '3VnrbENbyP0ax89nyAHlud8e3Lifhc4CnnULZmsZbWI5o'
-#api = twitter.Api(consumer_key = consumer_key, consumer_secret = consumer_secret, access_token_key = access_token_key, access_token_secret = access_token_secret)
-#print(api.VerifyCredentials())
-
-
-
-
-# https://gist.github.com/yanofsky/5436496
+# PoC:
+#tiv = TIVTwitter()
+#tiv.validateConnection()
