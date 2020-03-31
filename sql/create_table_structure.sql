@@ -4,7 +4,7 @@
 
 CREATE TABLE public.account
 (
-    account_id integer NOT NULL DEFAULT nextval('account_account_id_seq'::regclass),
+    account_id serial NOT NULL,
     account_name character(50) COLLATE pg_catalog."default" NOT NULL,
     account_url text COLLATE pg_catalog."default" NOT NULL,
     account_text text COLLATE pg_catalog."default",
@@ -29,7 +29,7 @@ ALTER TABLE public.account
 
 CREATE TABLE public.geo
 (
-    geo_id integer NOT NULL DEFAULT nextval('geo_geo_id_seq'::regclass),
+    geo_id serial NOT NULL,
     geo_name character(100) COLLATE pg_catalog."default",
     geo_lat integer,
     geo_long integer,
@@ -50,7 +50,7 @@ ALTER TABLE public.geo
 
 CREATE TABLE public.tweets
 (
-    tweet_id integer NOT NULL DEFAULT nextval('tweets_tweet_id_seq'::regclass),
+    tweet_id serial NOT NULL,
     account_id integer NOT NULL,
     tweet_time integer DEFAULT 0,
     tweet_content text COLLATE pg_catalog."default",
