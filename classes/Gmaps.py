@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import gmaps
+import googlemaps
 from Config import Config # TODO: Make it prettier
 
 class Gmaps:
