@@ -118,10 +118,10 @@ tiv@host:~$ cd twitter-incident-visualizer/sql/
 tiv@host:̃~/twitter-incident-visualizer/sql$ psql < create_table_structure.sql
 ```
 
-12. Install Psycopg2 and Twitter for Python.
+12. Install Psycopg2, googlemaps and Twitter for Python.
 
 ```
-root@host:~# pip3 install psycopg2 python-twitter
+root@host:~# pip3 install psycopg2 python-twitter googlemaps
 ```
 
 Follow also the installation steps here: https://github.com/bear/python-twitter#getting-the-code
