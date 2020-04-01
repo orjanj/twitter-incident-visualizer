@@ -13,6 +13,7 @@ twitter:
 
 gmaps:
   api_key: AIzaSyCSx31rj9HHzmpuFwo6KqoB7Cx4MWsBr0Q
+  country: Norway
 
 tweet_storage:
   directory: '/var/www/tweet_dumps'
