@@ -24,27 +24,14 @@ class TIVTwitter:
         """
         print(self.API.VerifyCredentials())
 
-    def getTweet(self, query_string):
+    def getTweets(self, screen_name, tweet_count):
         """ Get Tweet information from Twitter.
-        :return: xxx
-        :return: xxx
-        :return: xxx
-        :return: xxx
-        :return: xxx
-        :return: xxx
+        :param screen_name: twitter username (string)
+        :param tweet_count: count of tweets to fetch (int)
+        :return user_timeline: list of tweets (string)
         """
-        # TODO: Use `python-twitter` for this
-
-    def getTweets(self, query_string):
-        """ Get Tweet information from Twitter.
-        :return: xxx
-        :return: xxx
-        :return: xxx
-        :return: xxx
-        :return: xxx
-        :return: xxx
-        """
-        # TODO: Use `python-twitter` for this
+        user_timeline = self.API.GetUserTimeline(screen_name=screen_name, count=tweet_count)
+        return(user_timeline)
 
     def getAccountInfo(self, tweet_data):
         """ Get Twitter account information.
@@ -67,9 +54,17 @@ class TIVTwitter:
         statement = ''
         db.insertQuery()
 
+# finnmark:alta:kåfjordbrua:stanset:Unggutt
 
 
 
 # PoC:
-#tiv = TIVTwitter()
+tiv = TIVTwitter()
 #tiv.validateConnection()
+print(tiv.getTweets('politinordland', 20))
+
+
+# REF:
+# https://www.alexkras.com/how-to-get-user-feed-with-twitter-api-and-python/
+# https://github.com/Ondkloss/norwegian-wordlist
+# https://github.com/bear/python-twitter/blob/master/examples/get_all_user_tweets.py
