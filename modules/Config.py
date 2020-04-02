@@ -4,10 +4,9 @@ import yaml
 class Config:
     """ Base class for all configuration parameters. """
 
-    def __init__(self, filename="../config.yaml"):
+    def __init__(self, filename="config/config.yaml"):
         """ Instance constructor
         :param filename: configuration file (yaml formated)
-        :return: xxxxxxxxxxxx
         """
         self.filename = filename
 
@@ -17,7 +16,6 @@ class Config:
     def readConfigFile(self):
         """ Read file and add config parameters to instance
         :param filename: config file (yaml formated)
-        :return: none
         """
         with open(self.filename, 'r') as yml_file:
             self.config_json = yaml.load(yml_file)
@@ -27,8 +25,3 @@ class Config:
         :return: parameter (str)
         """
         return(self.config_json[config_section])
-
-
-# PoC:
-#conf = Config()
-#print(conf.getConfigParameter('postgresql'))
