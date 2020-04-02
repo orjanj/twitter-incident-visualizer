@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-import psycopg2, sys
-#from Config import Config # TODO: Make it prettier
+import psycopg2
 
 class DB:
   """ DB initializes and manipulates PostgreSQL databases."""
@@ -12,11 +11,11 @@ class DB:
     self.connected = False
 
     # Initialize configuration parameters for the database
-#    config = Config()
     self.config_param = config.getConfigParameter('postgresql')
 
     # Connect to database
     self.connect()
+
 
   def connect(self):
     """ Connect to the PostgreSQL database. """
@@ -30,13 +29,15 @@ class DB:
       self.cursor = self.connection.cursor()
       self.connected = True
 
+
   def close(self):
     """ Close the PostgreSQL database connection. """
     self.cursor.close()
     self.connection.close()
     self.connected = False
 
-  def validateConnection(self): # TODO: REMOVE!!!
+
+  def validateConnection(self):
     """
     Connection validation to PostgreSQL DB.
     :return: version + DSN parameters (string)
@@ -61,23 +62,14 @@ class DB:
     if self.connected:
       try:
         self.cursor.execute(statement, (values))
+
       except psycopg2.Error as error_msg:
         print(error_msg)
 
       if statement.upper().startswith('SELECT'):
         data = self.cursor.fetchall()
         return data
+
       else:
         self.connection.commit()
         return(self.cursor.rowcount)
-
-
-
-
-# PoC
-#if __name__ == '__main__':
-#  db = DB()
-#  query = "INSERT INTO account(account_name, account_url, account_text, account_reg_date, account_webpage, account_pic_url, account_verified) VALUES(%s, %s, %s, %s, %s, %s, %s)"
-#  values = ('testtest', 'https://lol.com', 'this is a test msg', int(0), 'https://lol.cn', 'http://lol.no', 'false')
-#  if db.execute(query, values):
-#    print("Row inserted in DB")
