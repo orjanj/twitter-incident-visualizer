@@ -14,12 +14,12 @@ class Config:
         # Append each config parameter to an list
         self.readConfigFile()
 
-    def readConfigFile(self, filename="../config.yaml"):
+    def readConfigFile(self):
         """ Read file and add config parameters to instance
         :param filename: config file (yaml formated)
         :return: none
         """
-        with open(filename, 'r') as yml_file:
+        with open(self.filename, 'r') as yml_file:
             self.config_json = yaml.load(yml_file)
 
     def getConfigParameter(self, config_section): # todo: remove config_param
