@@ -13,3 +13,5 @@ if __name__ == '__main__':
     twitter = TIVTwitter(config, db, gmaps)
 
     # TODO: Dump to JSON FILE
+    #    {json lat long tweet text account name }
+    # export til json fil + les til jquery og legg til i google string
