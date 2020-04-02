@@ -1,0 +1,57 @@
+{
+    "results" : [
+       {
+          "address_components" : [
+             {
+                "long_name" : "Bodø",
+                "short_name" : "Bodø",
+                "types" : [ "locality", "political" ]
+             },
+             {
+                "long_name" : "Nordland",
+                "short_name" : "Nordland",
+                "types" : [ "administrative_area_level_1", "political" ]
+             },
+             {
+                "long_name" : "Norge",
+                "short_name" : "NO",
+                "types" : [ "country", "political" ]
+             }
+          ],
+          "formatted_address" : "Bodø, Norge",
+          "geometry" : {
+             "bounds" : {
+                "northeast" : {
+                   "lat" : 67.31779590000001,
+                   "lng" : 14.6149209
+                },
+                "southwest" : {
+                   "lat" : 67.26530199999999,
+                   "lng" : 14.3501948
+                }
+             },
+             "location" : {
+                "lat" : 67.28035559999999,
+                "lng" : 14.404916
+             },
+             "location_type" : "APPROXIMATE",
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 67.31779590000001,
+                   "lng" : 14.6149209
+                },
+                "southwest" : {
+                   "lat" : 67.26530199999999,
+                   "lng" : 14.3501948
+                }
+             }
+          },
+          "place_id" : "ChIJffFjW_UQ30URUzxdspNbeI4",
+          "types" : [ "locality", "political" ]
+       }
+    ],
+    "status" : "OK"
+ }
+
+
+// [{'address_components': [{'long_name': 'Fauske', 'short_name': 'Fauske', 'types': ['locality', 'political']}, {'long_name': 'Nordland', 'short_name': 'Nordland', 'types': ['administrative_area_level_1', 'political']}, {'long_name': 'Norway', 'short_name': 'NO', 'types': ['country', 'political']}], 'formatted_address': 'Fauske, Norway', 'geometry': {'bounds': {'northeast': {'lat': 67.27668059999999, 'lng': 15.4473021}, 'southwest': {'lat': 67.235964, 'lng': 15.3249536}}, 'location': {'lat': 67.2591843, 'lng': 15.3916321}, 'location_type': 'APPROXIMATE', 'viewport': {'northeast': {'lat': 67.27668059999999, 'lng': 15.4473021}, 'southwest': {'lat': 67.235964, 'lng': 15.3249536}}}, 'place_id': 'ChIJ58qjnbUt30URdy2EITjtNoQ', 'types': ['locality', 'political']}]
