@@ -1,0 +1,32 @@
+[
+    {
+        "screen_name": "test1",
+        "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_bigger.jpeg",
+        "twitter_url": "https://twitter.com/politinordland",
+        "account_name": "Politiet i 1",
+        "lat": 59.3,
+        "lng": 18.1,
+        "time": "Wed Apr 01 19:50:31 +0000 2020",
+        "tweet_content": "tweet content 1"
+    },
+    {
+        "screen_name": "test2",
+        "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_bigger.jpeg",
+        "twitter_url": "https://twitter.com/politinordland",
+        "account_name": "Politiet i 2",
+        "lat": 58.3,
+        "lng": 17.1,
+        "time": "Wed Apr 01 19:50:31 +0000 2020",
+        "tweet_content": "tweet content 2"
+    },
+    {
+        "screen_name": "test3",
+        "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_bigger.jpeg",
+        "twitter_url": "https://twitter.com/politinordland",
+        "account_name": "Politiet i 3",
+        "lat": 57.3,
+        "lng": 16.1,
+        "time": "Wed Apr 01 19:50:31 +0000 2020",
+        "tweet_content": "tweet content 3"
+    }
+]
