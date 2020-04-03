@@ -6,7 +6,9 @@ class Gmaps:
 
     def __init__(self, config):
         """ Instance constructor
+        :params config: config parameters (string)
         """
+        # Get config parameters for Google Maps
         config_param = config.getConfigParameter('gmaps')
         self.gmaps = googlemaps.Client(key=config_param['api_key'])
         self.country = config_param['country']
@@ -16,6 +18,7 @@ class Gmaps:
         :param location_string: place names (string)
         :return latlong: latitude and longitude (string)
         """
+        # Search for a location and return lat/long
         location_string = location_string + self.country
         geocode_result = self.gmaps.geocode(location_string)
         return(geocode_result[0]['geometry']['location'])
