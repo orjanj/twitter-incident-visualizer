@@ -6,73 +6,70 @@ from modules.Twitter import TIVTwitter # TODO: Make it prettier
 from modules.File import File
 from modules.Gmaps import Gmaps
 
-
+# Start of our mining application
 if __name__ == '__main__':
+
+    # Create instances
     config = Config()
     db = DB(config)
     gmaps = Gmaps(config)
-    twitter = TIVTwitter(config, db, gmaps)
-#    twitter.validateConnection() # ok
+    tiv = TIVTwitter(config, db, gmaps)
 
+    # Get config parameters for the mining script
+    mine_cfg = config.getConfigParameter('twitter-mine')
+    gmaps_cfg = config.getConfigParameter('gmaps')
 
+    # Get followers
+    if mine_cfg['mine_followers'] == True:
 
-    exit()
-#    twitter = TIVTwitter()
-#    gmaps = Gmaps()
+        # Get value for number of followers
+        followers = tiv.getProjectFollowers(mine_cfg['mine_number_of_followers'])
 
+        # Go through all the followers
+        for user in followers:
 
+            # Get account information for the user
+            account_data = tiv.getAccountInfo(user.screen_name)
 
+            # Insert the account data into the database
+            tiv.insertAccountToDB(account_data)
 
+    # Get tweets from Twitter
+    if mine_cfg['mine_tweets'] == True:
 
+        # Get account screen names
+        result = db.execute("SELECT account_screen_name, account_id FROM account ORDER BY account_screen_name DESC")
 
+        # And let's go through all users tweets
+        for row in result:
 
+            # Get tweets for each user
+            account_screen_name = row[0]
+            account_id = row[1]
+            users_tweets_data = tiv.getTweets(account_screen_name, mine_cfg['mine_tweet_count'])
 
-# Start of mining script
-#if __name__ == 'main':
-#    tweet = TIVTwitter()
-#    tweet_content = getTweets()
-##   tw = tiv.getTweet('account=politietinordland,account=politietioslo')
-##   for x in tw:
-##       print('some shiet' + x)
-#
-#    mine = Mining()
-#    mine.exportToFile(tweet_content)
-#    mine.importFromFile(tweet_content)
+            # Go through Tweets for each user
+            for u in users_tweets_data:
 
-    # TODO: ADD SOME REGEXP - parse tweet    
-#s = "#Rana: @Utrykningspol har gjennomført fartskontroll i Korgfjelltunnelen. Resultat: 2 stk. forenklede forelegg, høyeste måling 98 km/t i 80 sonen."
-#print(re.split('#([A-Za-z])(:)', s)[1])
-#l = re.compile('(#)([A-Za-z0-9]:)').split(s)
-#print(l)
-# TEST DATA:
-# Vestvågøy/Ner-Voll: brann i traktor på gårdsvei. Ingen personskader. Nødetatene er på tur mot stedet
-# #Rana: @Utrykningspol har g#en: @Utrykningspol har gjennomført laserkontroll i 60-sona. Resultat: 7 forenkla forelegg er utskrevet, høyeste hastighet målt til 77 km/t.
-# Bilen er helt utbrent. Vi har pågrepet en person mistenkt for bilbrukstyveri og ruspåvirket kjøring.
-# #Sortland: #Blokken: Mann i begynnelsen av 30 årene hadde kjørt seg fast i en snøskavel. Mistenkes for promillekjøring. Fremstilles legevakt for bevissikring.
+                # Create a hash tag list
+                hash_list = []
 
-#    account_name = ''
-#    hash_tag = ''
-#    tweet_content = ''
-#    tweet.insertTweetToDB(account_name, hash_tag, tweet_content)
-    # TODO: Add more data to this function
+                # Check if there is any hashtags
+                if len(u.hashtags) > 0:
+                    hsh = ''
 
-    # TODO: jQuery @ demo.html to generate list structure for pinpoints on map
-    # jQuery script runs GET AJAX request from JS to backend Py that returns tweets from DB (with lat/long)
+                    # Create an comma separated hash variable
+                    for tag in u.hashtags:
+                        if len(hsh) > 0:
+                            hsh += ', '
+                        hsh += tag.text
 
+                # Check if the hash variable contains data, and get lat/long
+                if len(hsh) > 0:
+                    google_location = gmaps.lookUpLocation(hsh)
+                    if not google_location == None:
+                        longitude = google_location['lng']
+                        latitude = google_location['lat']
 
-#class Mining:
-#    """ Base class for mining Tweets from Twitter. """
-#
-#    def __init__(self):
-#        """ Instance constructor
-#        :return: none
-#        """
-#        config = Config()
-#        config_param = config.getConfigParameter('gmaps')
-#        file_param = config.getConfigParameter('file')
-#        file = File()
-##        self.filename = file.export_file # todo: fix
-#
-#    def parseContent(self, tweet_content):
-#        """ Parse the content of a Tweet. """
-#        # TODO: Create objects/lists/etc out of this
+                # Insert record data to database
+                tiv.insertTweetsToDB(account_id, hsh, latitude, longitude, u)
