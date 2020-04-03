@@ -171,3 +171,7 @@ generate web_application.json (for use on web app) run python3 interface.py
 ```
 Change settings if needed
 ```
+21. To access the demo site, open demo.html in your browser
+```
+Localhost or IP of your server/PC /twitter-incident-visualizer/examples/demo.html
+```
