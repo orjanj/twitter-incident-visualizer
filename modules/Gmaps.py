@@ -19,6 +19,7 @@ class Gmaps:
         :return latlong: latitude and longitude (string)
         """
         # Search for a location and return lat/long
-        location_string = location_string + self.country
+        location_string = location_string + ', ' +  self.country
         geocode_result = self.gmaps.geocode(location_string)
-        return(geocode_result[0]['geometry']['location'])
+        if len(geocode_result) > 0:
+            return(geocode_result[0]['geometry']['location'])
