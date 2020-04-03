@@ -163,3 +163,11 @@ root@host:/var/www# chown -hR <your user>:<your group, same as username as usual
 ```
 root@host:/var/www/html# git clone https://github.com/orjanj/twitter-incident-visualizer.git
 ```
+19. Run interface.py to generate JSON structure 
+```
+generate web_application.json (for use on web app) run python3 interface.py
+```
+20. In config.JAML you can change the settings 
+```
+Change settings if needed
+```
