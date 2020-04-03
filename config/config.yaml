@@ -12,6 +12,12 @@ twitter:
   access_token_secret: 3VnrbENbyP0ax89nyAHlud8e3Lifhc4CnnULZmsZbWI5o
   screen_name: incidentvisual1
 
+twitter-mine:
+  mine_followers: True
+  mine_tweets: True
+  mine_number_of_followers: 3
+  mine_tweet_count: 10
+
 gmaps:
   api_key: AIzaSyCSx31rj9HHzmpuFwo6KqoB7Cx4MWsBr0Q
   country: Norway
