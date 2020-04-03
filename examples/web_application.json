@@ -1,32 +1,1302 @@
 [
-    {
-        "screen_name": "test1",
-        "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_bigger.jpeg",
-        "twitter_url": "https://twitter.com/politinordland",
-        "account_name": "Politiet i 1",
-        "lat": 59.3,
-        "lng": 18.1,
-        "time": "Wed Apr 01 19:50:31 +0000 2020",
-        "tweet_content": "tweet content 1"
-    },
-    {
-        "screen_name": "test2",
-        "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_bigger.jpeg",
-        "twitter_url": "https://twitter.com/politinordland",
-        "account_name": "Politiet i 2",
-        "lat": 58.3,
-        "lng": 17.1,
-        "time": "Wed Apr 01 19:50:31 +0000 2020",
-        "tweet_content": "tweet content 2"
-    },
-    {
-        "screen_name": "test3",
-        "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_bigger.jpeg",
-        "twitter_url": "https://twitter.com/politinordland",
-        "account_name": "Politiet i 3",
-        "lat": 57.3,
-        "lng": 16.1,
-        "time": "Wed Apr 01 19:50:31 +0000 2020",
-        "tweet_content": "tweet content 3"
-    }
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 63.6557799,
+    "lng": 10.0420836,
+    "time": "Fri Apr 03 08:08:28 +0000 2020",
+    "tweet_content": "#Rissa: trafikkuhell  - bil kj\u00f8rt av veien - meldt om lettere personskade - blir tilsett av helse/politiet p\u00e5 vei til stedet."
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 63.7505981,
+    "lng": 11.916895,
+    "time": "Fri Apr 03 06:00:52 +0000 2020",
+    "tweet_content": "#Verdal: Trafikkuhell p\u00e5 FV 757 s\u00f8r for Stiklestad. En bil har kj\u00f8rt utfor veien og ligger p\u00e5 siden. N\u00f8detatene er\u2026 https://t.co/NfvjY8m5W7"
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 63.7505981,
+    "lng": 11.916895,
+    "time": "Thu Apr 02 23:35:49 +0000 2020",
+    "tweet_content": "Ingen personskade, f\u00f8rer av vogntoget har bestilt berging. Vanskelige kj\u00f8reforhold i omr\u00e5det. https://t.co/gf0SjHbEXr"
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 64.8615211,
+    "lng": 11.2412404,
+    "time": "Thu Apr 02 21:58:33 +0000 2020",
+    "tweet_content": "#Namdal: N\u00f8detatene rykker ut til melding om trailer som har kj\u00f8rt i bergvegg p\u00e5 fv. 770 mellom Kolvereid og Folder\u2026 https://t.co/VuP6eAyv8I"
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 64.0150193,
+    "lng": 11.4952627,
+    "time": "Thu Apr 02 20:05:22 +0000 2020",
+    "tweet_content": "#Steinkjer UP har hatt fartskontroll Namsosvegen.\n 8 FF h\u00f8yeste hastighet 77 km/t i 60 sone"
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 63.3513866,
+    "lng": 10.3586109,
+    "time": "Thu Apr 02 17:47:14 +0000 2020",
+    "tweet_content": "#Heimdal UP har avholdt fartskontroll p\u00e5 Torg\u00e5rdssletta i 60 sone. 10 FF,  h\u00f8yeste hastighet 81 km/t.\n1 FF for feil\u2026 https://t.co/2dyEFUrK2z"
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 63.32488,
+    "lng": 10.3071574,
+    "time": "Thu Apr 02 15:57:20 +0000 2020",
+    "tweet_content": "#Leinstrand En Heimdalspatrulje har stanset en bil. F\u00f8rer mann, 19 \u00e5r kj\u00f8rte uten gyldig f\u00f8rerkort, ogs\u00e5 mistanke o\u2026 https://t.co/OM8n6cEMHs"
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 63.2642615,
+    "lng": 10.5053924,
+    "time": "Thu Apr 02 14:22:09 +0000 2020",
+    "tweet_content": "#Kl\u00e6bu: etter tips ble bil med f\u00f8rer f. 78 fra Litauen stanset og kontrollert for mistanke om ruskj\u00f8ring. F\u00f8rer inn\u2026 https://t.co/q92LxBbwav"
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 63.3513866,
+    "lng": 10.3586109,
+    "time": "Thu Apr 02 14:20:31 +0000 2020",
+    "tweet_content": "#Heimdal Melding om et branntill\u00f8p i en bolig i Sjetnemarka. Brannen skal v\u00e6re slukket av beboer. En del r\u00f8yk p\u00e5 st\u2026 https://t.co/s6nrR7Z7aL"
+  },
+  {
+    "screen_name": "PolitiTrondelag",
+    "profile_pic": "https://pbs.twimg.com/profile_images/1848373139/logo_normal.JPG",
+    "twitter_url": "https://twitter.com/PolitiTrondelag",
+    "account_name": "Politiet i Tr\u00f8ndelag",
+    "lat": 63.4305149,
+    "lng": 10.3950528,
+    "time": "Thu Apr 02 14:17:17 +0000 2020",
+    "tweet_content": "#Trondheim: mann f. 82 stanset i bil av UP - mistanke om ruskj\u00f8ring. Blir med inn for blodpr\u00f8ve."
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.4942282,
+    "lng": 20.8334766,
+    "time": "Thu Apr 02 18:17:00 +0000 2020",
+    "tweet_content": "#Birtavarre: Mindre\u00e5rig ungdom p\u00e5 ATV fors\u00f8kte \u00e5 unndra seg en politikontroll. Ble etterhvert stanset. ATVen viste\u2026 https://t.co/OtfyUuhQFy"
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.4942282,
+    "lng": 20.8334766,
+    "time": "Thu Apr 02 15:59:32 +0000 2020",
+    "tweet_content": "Bilen har kommet seg ned fra broa."
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.6492047,
+    "lng": 18.9553239,
+    "time": "Thu Apr 02 15:58:25 +0000 2020",
+    "tweet_content": "#Troms\u00f8: En bil har f\u00e5tt stans p\u00e5 Sandessundbrua. Dette medf\u00f8rer noe k\u00f8. Politiet er p\u00e5 vei."
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.6492047,
+    "lng": 18.9553239,
+    "time": "Thu Apr 02 13:18:57 +0000 2020",
+    "tweet_content": "Oppdatering: Det var ikke v\u00e6rt brann p\u00e5 stedet. Patruljen forlater."
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.6492047,
+    "lng": 18.9553239,
+    "time": "Thu Apr 02 13:03:00 +0000 2020",
+    "tweet_content": "#Troms\u00f8: Brannvesen og politiet rykker ut til melding om mulig brann p\u00e5 krematoriet i Salar\u00f8yvegen. Meldingen vil bli oppdatert."
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.5572308,
+    "lng": 21.3899913,
+    "time": "Thu Apr 02 12:16:03 +0000 2020",
+    "tweet_content": "#Nordreisa: Vogntoget er n\u00e5 fjernet og veien er \u00e5pen"
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.6492047,
+    "lng": 18.9553239,
+    "time": "Thu Apr 02 11:25:16 +0000 2020",
+    "tweet_content": "#Troms\u00f8: Mann i 30-\u00e5rene anmeldes for kj\u00f8ring uten gyldig f\u00f8rerkort. Ble stanset i kontroll p\u00e5 Stakkevollan av en p\u2026 https://t.co/QgVmBXjulQ"
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.5572308,
+    "lng": 21.3899913,
+    "time": "Thu Apr 02 10:36:29 +0000 2020",
+    "tweet_content": "#Nordreisa: Vogntog har sakset p\u00e5 E6 rett s\u00f8r for S\u00f8rkjostunellen. Veien er helt sperret inntil videre. Bilberging er rekvirert"
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.6492047,
+    "lng": 18.9553239,
+    "time": "Thu Apr 02 07:11:38 +0000 2020",
+    "tweet_content": "#Troms\u00f8: Melding om en sort fuglehund som l\u00f8p i Sentrumstangenten og skapte trafikkaos. Huden er tatt h\u00e5nd om. Ders\u2026 https://t.co/kuVVrldbLf"
+  },
+  {
+    "screen_name": "polititroms",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3564233540/134f1d6a2aeb38f71a80b5971e503e06_normal.jpeg",
+    "twitter_url": "https://twitter.com/polititroms",
+    "account_name": "Troms politidistrikt",
+    "lat": 69.6776945,
+    "lng": 18.7473964,
+    "time": "Thu Apr 02 00:19:24 +0000 2020",
+    "tweet_content": "#Eidkjosen: @Utrykningspol meldte kl. 00.12 at de hadde tatt beslag i f\u00f8rerkortet til en gutt i slutten av ten\u00e5rene\u2026 https://t.co/pV8rXJuam0"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 67.2829185,
+    "lng": 14.4150774,
+    "time": "Fri Apr 03 04:18:51 +0000 2020",
+    "tweet_content": "#Bod\u00f8. kl. 2320. Melding om voldssak p\u00e5 privatadresse der r\u00f8rtang var brukt som slagv\u00e5pen. 1 mann i 40 \u00e5rene p\u00e5grep\u2026 https://t.co/mQw9YbGCr8"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 67.095278,
+    "lng": 15.3877832,
+    "time": "Fri Apr 03 04:15:13 +0000 2020",
+    "tweet_content": "#Rognan. @Utrykningspol har f\u00f8r midnatt stoppet bilf\u00f8rer mistenkt for rusp\u00e5virket kj\u00f8ring. Bevissikring foretatt. V\u2026 https://t.co/9Cl3rhDhq4"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 66.3118355,
+    "lng": 14.1545798,
+    "time": "Thu Apr 02 23:56:52 +0000 2020",
+    "tweet_content": "#Mo i Rana. #E6 Rana. Vi har f\u00e5tt melding om flere vogntog som sliter med fremkommeligheten. VTS er varslet og vil\u2026 https://t.co/ilzk2tX0kp"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 66.3219221,
+    "lng": 14.1664212,
+    "time": "Thu Apr 02 23:18:45 +0000 2020",
+    "tweet_content": "#Ranenget: @Utrykningspol har avholdt kontroll. 2 forenklede forelegg utskrevet, h\u00f8yeste for 72km/t i 60-sone."
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 60.472024,
+    "lng": 8.468946,
+    "time": "Thu Apr 02 20:00:42 +0000 2020",
+    "tweet_content": "#Vest-lofoten: \n@Utrykningspol har gjennomf\u00f8rt laserkontroll p\u00e5 E-10 ved Knutstad. Resultat: 4 stk. forenklede fore\u2026 https://t.co/1QODdZ1ksc"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 60.472024,
+    "lng": 8.468946,
+    "time": "Thu Apr 02 19:45:27 +0000 2020",
+    "tweet_content": "Bjerka/UP: 3 FF og h\u00f8yeste fart var 96 km/t i 80 sonen"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 67.2591843,
+    "lng": 15.3916321,
+    "time": "Thu Apr 02 17:49:39 +0000 2020",
+    "tweet_content": "#Fauske:\n@Utrykningspol har gjennomf\u00f8rt laserkontroll p\u00e5 Terminalveien. Resultat: 2 stk. forenklede forelegg, h\u00f8yes\u2026 https://t.co/30pAq5PHrq"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 67.2591843,
+    "lng": 15.3916321,
+    "time": "Thu Apr 02 17:47:27 +0000 2020",
+    "tweet_content": "R\u00f8ykutvikling formentlig grunnet liten diesel lekkasje p\u00e5 et agregat. Ingen personskade. N\u00f8detatene har avsluttet p\u2026 https://t.co/EmmJDt3NdE"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 66.0215534,
+    "lng": 12.6314628,
+    "time": "Thu Apr 02 17:10:58 +0000 2020",
+    "tweet_content": "#Sandnessj\u00f8en: \nVed patruljering ble politipatruljen oppmerksom p\u00e5 r\u00f8ykutvikling fra en b\u00e5t i sm\u00e5b\u00e5thavnen. N\u00f8detat\u2026 https://t.co/x5BX2X6h4a"
+  },
+  {
+    "screen_name": "politinordland",
+    "profile_pic": "https://pbs.twimg.com/profile_images/417638849137741824/aHsYdiix_normal.jpeg",
+    "twitter_url": "https://twitter.com/politinordland",
+    "account_name": "Politiet i Nordland",
+    "lat": 65.836924,
+    "lng": 13.1934011,
+    "time": "Thu Apr 02 13:51:26 +0000 2020",
+    "tweet_content": "#Mosj\u00f8en: \n@Utrykningspol har gjennomf\u00f8rt laserkontroll p\u00e5 E-6 ved Alsg\u00e5rden. Resultat: 3 forenklede forelegg, h\u00f8ye\u2026 https://t.co/rRuVSn26Z2"
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 65.836924,
+    "lng": 13.1934011,
+    "time": "Fri Apr 03 08:00:55 +0000 2020",
+    "tweet_content": "Ingen personskade. Begge bilene st\u00e5r utenfor vei. Venter p\u00e5 bilberger. https://t.co/vD2HKk84Or"
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.5307266,
+    "lng": 6.3258761,
+    "time": "Fri Apr 03 07:42:11 +0000 2020",
+    "tweet_content": "#Grytastranda, FV 527, Trafikkulykke. 2 biler. N\u00f8detatene er p\u00e5 vei til stedet."
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.5307266,
+    "lng": 6.3258761,
+    "time": "Fri Apr 03 06:53:11 +0000 2020",
+    "tweet_content": "En person sjekkes av ambulanse. https://t.co/YJVlrLJpZP"
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.2817298,
+    "lng": 5.8232306,
+    "time": "Fri Apr 03 06:39:46 +0000 2020",
+    "tweet_content": "#Myrv\u00e5g, Fv. 654. Trafikkuhell. Bil kj\u00f8rt ut av veien. N\u00f8detatene p\u00e5 vei til stedet."
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.4722284,
+    "lng": 6.1494821,
+    "time": "Thu Apr 02 22:58:09 +0000 2020",
+    "tweet_content": "#\u00c5lesund: F\u00f8rar vert teken med til legevakt/sjukehus for unders\u00f8kelse. Mistanke om rusk\u00f8yring. Blodpr\u00f8ve og f\u00f8rarkortbeslag."
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.4722284,
+    "lng": 6.1494821,
+    "time": "Thu Apr 02 22:33:49 +0000 2020",
+    "tweet_content": "#\u00c5lesund: Naudetatane rykker ut til Brusdalsvegen etter melding om trafikkuhell. 1 bil involvert. Ligg p\u00e5 taket. 1\u2026 https://t.co/QfPPrTOqfU"
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.3433146,
+    "lng": 5.8488429,
+    "time": "Thu Apr 02 20:59:37 +0000 2020",
+    "tweet_content": "#Ulsteinvik: Alle naudetatane p\u00e5 staden. T\u00f8rrkoking. Ingen opne flammar. Kontroll. 1 person i aktuell leilegheit."
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.3433146,
+    "lng": 5.8488429,
+    "time": "Thu Apr 02 20:53:46 +0000 2020",
+    "tweet_content": "#Ulsteinvik: Naudetatane rykker ut til Bj\u00f8rndalvegen etter melding om ulande r\u00f8ykvarlar og r\u00f8yklukt. Vert oppdatert."
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.7372352,
+    "lng": 7.1607306,
+    "time": "Thu Apr 02 20:42:39 +0000 2020",
+    "tweet_content": "#Molde #Sk\u00e5la: Naudetatane p\u00e5 veg til Sk\u00e5la etter melding om bil som har k\u00f8yrd i autovernet p\u00e5 Bols\u00f8ybrua. Tilsynel\u2026 https://t.co/GBUPppqS24"
+  },
+  {
+    "screen_name": "PolitiMRpd",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3353031806/146dad1d3939f8696c75067753436171_normal.jpeg",
+    "twitter_url": "https://twitter.com/PolitiMRpd",
+    "account_name": "Politiet M\u00f8reRomsdal",
+    "lat": 62.4895347,
+    "lng": 6.9414633,
+    "time": "Thu Apr 02 19:35:06 +0000 2020",
+    "tweet_content": "#\u00d8rskog\nF\u00f8rer av personbil mistenkes for kj\u00f8ring i rusp\u00e5virket tilstand. Pr\u00f8vetaking, beslag av f\u00f8rerkort, sak opprettes."
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 69.9688853,
+    "lng": 23.2715873,
+    "time": "Thu Apr 02 19:30:53 +0000 2020",
+    "tweet_content": "#Alta @utrykningspol: kl. 1830: 2 kj\u00f8ret\u00f8y har kollidert i \u00d8vre Alta. UP har v\u00e6rt p\u00e5 stedet. F\u00f8rer av det ene kj\u00f8re\u2026 https://t.co/FvNJHpH0y9"
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 70.3705875,
+    "lng": 31.1094377,
+    "time": "Thu Apr 02 14:45:57 +0000 2020",
+    "tweet_content": "#Vard\u00f8: Latvisk mann stanset av politiet bak rattet p\u00e5 en personbil. Bl\u00e5sepr\u00f8ve viste at han hadde drukket alkohol.\u2026 https://t.co/7V9waCNkzJ"
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 70.721921,
+    "lng": 23.8063296,
+    "time": "Thu Apr 02 14:25:09 +0000 2020",
+    "tweet_content": "#Fors\u00f8l: To hester g\u00e5r l\u00f8se langs Langnesveien."
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Thu Apr 02 13:33:13 +0000 2020",
+    "tweet_content": "#Hammerfest: @Utrykningspol Up har gjennomf\u00f8rt trafikkontroll i 60-sonen i Akkarfjord. 5 forenklede forelegg, h\u00f8yeste hastighet var 78 km/t."
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 69.7578532,
+    "lng": 29.6859465,
+    "time": "Thu Apr 02 11:56:09 +0000 2020",
+    "tweet_content": "#S\u00f8rVaranger: 17-\u00e5ring p\u00e5 UTV stanset for andre gang, i omr\u00e5det H\u00e5beth, med ulovlig vindusfilm. F\u00f8rerkortet beslagl\u2026 https://t.co/xy9NHcbN6S"
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 69.9688853,
+    "lng": 23.2715873,
+    "time": "Thu Apr 02 10:56:18 +0000 2020",
+    "tweet_content": "#Alta: Unggutt kj\u00f8rte uaktsomt forbi en annen bil ved K\u00e5fjordbrua. Stanset av politiet i Alta og f\u00e5tt tilsnakk."
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 69.9688853,
+    "lng": 23.2715873,
+    "time": "Wed Apr 01 20:30:30 +0000 2020",
+    "tweet_content": "#Alta @Utrykningspol fartskontroll i Buktabakken, 6 FF, h\u00f8yeste fart 63 km/t i skiltet 50-sone."
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 70.7947645,
+    "lng": 23.4092075,
+    "time": "Wed Apr 01 13:17:58 +0000 2020",
+    "tweet_content": "#Akkarfjord @Utrykningspol UP har hatt kontroll det ble utstedt 6 forelegg for hastighet, 2 forelegg for mobilbruk\u2026 https://t.co/p6Jsa9jjJZ"
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 70.7947645,
+    "lng": 23.4092075,
+    "time": "Tue Mar 31 14:52:35 +0000 2020",
+    "tweet_content": "N\u00f8detatene fremme p\u00e5 stedet. Involverte tas h\u00e5nd om av ambulanse. Sea King p\u00e5 vei. Den ene lastebilen har kj\u00f8rt i d\u2026 https://t.co/N4ftYNLkIu"
+  },
+  {
+    "screen_name": "politifinnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3041575970/8ef89e22fb17a404f39c33d0bda7282e_normal.jpeg",
+    "twitter_url": "https://twitter.com/politifinnmark",
+    "account_name": "Politiet i Finnmark",
+    "lat": 69.471935,
+    "lng": 25.5108129,
+    "time": "Tue Mar 31 14:16:21 +0000 2020",
+    "tweet_content": "#Karasjok: N\u00f8detatene rykker ut etter melding om trafikkulykke p\u00e5 E6 ved Borjjasnjarga. To lastebiler involvert. Me\u2026 https://t.co/qiWChtsWkk"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 60.0712128,
+    "lng": 11.1344326,
+    "time": "Fri Apr 03 09:16:03 +0000 2020",
+    "tweet_content": "#Kl\u00f8fta #Trondheimsvegen UP har gjennomf\u00f8rt trafikkontroll p\u00e5 stedet. Det ble utstedt 3 forelegg for bruk av mobil,\u2026 https://t.co/NbCTUsAvHm"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 60.0712128,
+    "lng": 11.1344326,
+    "time": "Fri Apr 03 08:49:21 +0000 2020",
+    "tweet_content": "Mannen er funnet d\u00f8d i Glomma. P\u00e5r\u00f8rende er varsla."
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 59.2840729,
+    "lng": 11.1094028,
+    "time": "Fri Apr 03 08:14:37 +0000 2020",
+    "tweet_content": "#Sarpsborg Politipatrulje ved Krusel\u00f8kka ungdomsskole i forbindelse med trolig stj\u00e5let MC. Patruljen gjort unders\u00f8k\u2026 https://t.co/wDshqlJdaV"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 59.2840729,
+    "lng": 11.1094028,
+    "time": "Fri Apr 03 07:09:07 +0000 2020",
+    "tweet_content": "Mannen er ca 165 cm h\u00f8y og tynn. Han er if\u00f8rt en m\u00f8rk allv\u00e6rsjakke, sort joggebukse og sorte vintersko. Han bruker\u2026 https://t.co/jVPGkqiMi1"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 60.1210501,
+    "lng": 11.4663429,
+    "time": "Fri Apr 03 07:07:23 +0000 2020",
+    "tweet_content": "#\u00c5rnes; Vi er i \u00c5rnes med flere enheter sammen med brann og helse. Vi s\u00f8ker etter en mann i 70 \u00e5rene if\u00f8rt en m\u00f8rk\u2026 https://t.co/U7evy6wFQE"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 59.2070769,
+    "lng": 11.0521044,
+    "time": "Fri Apr 03 06:26:22 +0000 2020",
+    "tweet_content": "#Grimstadveien #Fredrikstad kl 0530; bil som kj\u00f8rte av veien mellom Borge skole og Kj\u00f8lsund. F\u00f8rer, mann i 30 \u00e5rene\u2026 https://t.co/e72FLK16MY"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 60.1475819,
+    "lng": 11.169393,
+    "time": "Fri Apr 03 00:59:20 +0000 2020",
+    "tweet_content": "#Jessheim E6 nordg\u00e5ende. Politiet stanset en bilist med hastighet 138 m/h i 110 sona p\u00e5 stedet. F\u00f8rer ble ilagt et\u2026 https://t.co/N94CWwdHGQ"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 60.0045862,
+    "lng": 11.0328,
+    "time": "Fri Apr 03 00:27:57 +0000 2020",
+    "tweet_content": "#Skedsmokorset. Kl.0018 bilf\u00f8rer anmeldt for besittelse av narkotika, kj\u00f8ring i ruset tilstand og kj\u00f8ring uten gyld\u2026 https://t.co/lMZ095pEQo"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 60.3296456,
+    "lng": 11.272252,
+    "time": "Fri Apr 03 00:21:25 +0000 2020",
+    "tweet_content": "#Eidsvoll. En beruset dame er anmeldt etter at hun gikk p\u00e5 jernbanelinjen ved Haga stasjon. Et godstog som kom kj\u00f8r\u2026 https://t.co/nWuSR7AkFQ"
+  },
+  {
+    "screen_name": "politietost",
+    "profile_pic": "https://pbs.twimg.com/profile_images/840157328909443072/LkAcdrLt_normal.jpg",
+    "twitter_url": "https://twitter.com/politietost",
+    "account_name": "Politiet i \u00d8st",
+    "lat": 60.3296456,
+    "lng": 11.272252,
+    "time": "Thu Apr 02 20:19:59 +0000 2020",
+    "tweet_content": "2. En bil stakk av fra trafikkontrollen, ble funnet p\u00e5 hjemmeadressen. F\u00f8rer erkjente \u00e5 ha stukket av fordi han had\u2026 https://t.co/GO79EN50PD"
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.52508,
+    "lng": 6.9785061,
+    "time": "Fri Apr 03 09:18:33 +0000 2020",
+    "tweet_content": "#Kvinesdal kl. 1107: Trafikkulykke p\u00e5 FV42 ca 2 km \u00f8st for Kvinlog. Personbil mot trailer, f\u00f8rer er ute. Ikke noe s\u2026 https://t.co/AH99HcMSdH"
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.1599119,
+    "lng": 8.0182064,
+    "time": "Fri Apr 03 08:49:57 +0000 2020",
+    "tweet_content": "#Kristiansand, kl 1026: Melding om innbrudd i garasje i V\u00e5gsbygd Ringvei. Politiet er p\u00e5 stedet og gjennomf\u00f8rer unders\u00f8kelser."
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.1599119,
+    "lng": 8.0182064,
+    "time": "Fri Apr 03 05:09:35 +0000 2020",
+    "tweet_content": "Personen som er hentet ut har f\u00e5tt i seg noe r\u00f8yk, vil f\u00e5 tilsyn av helsepersonell."
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.1599119,
+    "lng": 8.0182064,
+    "time": "Fri Apr 03 05:05:37 +0000 2020",
+    "tweet_content": "#Kristiansand. Kl 0700. Melding om brann i institusjonsbygg i L\u00f8kkeveien. Brannen er allerede slokket, en person er\u2026 https://t.co/OHyHiIQyGW"
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.3392091,
+    "lng": 7.8096552,
+    "time": "Fri Apr 03 00:45:32 +0000 2020",
+    "tweet_content": "#Vennesla. Kl 0140. Politiet p\u00e5grep en person som er etterlyst, vedkommende anmeldes ogs\u00e5 for kj\u00f8ring uten gyldig f\u00f8rerkort."
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.1599119,
+    "lng": 8.0182064,
+    "time": "Fri Apr 03 00:44:10 +0000 2020",
+    "tweet_content": "#Kristiansand. Kl 0105. To personer kontrollert av politiet. Anmeldes for overtredelse av narkotikalovgivningen, en\u2026 https://t.co/SguMzvHjSQ"
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.52508,
+    "lng": 6.9785061,
+    "time": "Thu Apr 02 18:35:06 +0000 2020",
+    "tweet_content": "#Kvinesdal : politiet har stanset en bilf\u00f8rer som kj\u00f8rte mot kj\u00f8reretning i rundkj\u00f8ring i forbindelse med forbikj\u00f8r\u2026 https://t.co/uJ4gYe6cj8"
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.52508,
+    "lng": 6.9785061,
+    "time": "Thu Apr 02 16:48:52 +0000 2020",
+    "tweet_content": "Det har ikke v\u00e6rt brann i boligen. Snakk om tilbakeslag av r\u00f8yk fra en ovn. Politiet avbryter utrykning til stedet.\u2026 https://t.co/X50aChhfQP"
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.52508,
+    "lng": 6.9785061,
+    "time": "Thu Apr 02 16:12:46 +0000 2020",
+    "tweet_content": "Brannvesenet er p\u00e5 stedet og bekrefter at alle personer er ute av bygget."
+  },
+  {
+    "screen_name": "politiagder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/3757805213/7f8a84b1298532e730eb9b7aa6b5b077_normal.jpeg",
+    "twitter_url": "https://twitter.com/politiagder",
+    "account_name": "Politiet i Agder",
+    "lat": 58.2971823,
+    "lng": 6.6599809,
+    "time": "Thu Apr 02 16:12:11 +0000 2020",
+    "tweet_content": "#Flekkefjord : melding om r\u00f8ykutvikling i enebolig p\u00e5 Drangeid. Det skal ikke v\u00e6re personer inne i bygget. N\u00f8detate\u2026 https://t.co/jsLEmkj9n4"
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 59.4260491,
+    "lng": 10.6985069,
+    "time": "Fri Apr 03 06:25:14 +0000 2020",
+    "tweet_content": "#Moss MIB er i Calbergveien, branntill\u00f8p i en personbil. Det er kontroll p\u00e5 stedet."
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 59.6813358,
+    "lng": 10.8835984,
+    "time": "Fri Apr 03 05:56:07 +0000 2020",
+    "tweet_content": "#Kr\u00e5kstad Brannen i Nesveien er slukket."
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 59.6813358,
+    "lng": 10.8835984,
+    "time": "Fri Apr 03 05:05:33 +0000 2020",
+    "tweet_content": "#Kr\u00e5kstad Follo brannvesen er i Nesveien, brann i et skur."
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 59.928982,
+    "lng": 11.1624746,
+    "time": "Thu Apr 02 18:45:03 +0000 2020",
+    "tweet_content": "#Fetsund NRBR er p\u00e5 vei til automatisk brannalarm Rovenveien"
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 60.1782461,
+    "lng": 11.5158002,
+    "time": "Thu Apr 02 18:44:27 +0000 2020",
+    "tweet_content": "#Oppakermoen \u00d8RB Nes har v\u00e6rt p\u00e5 trafikkuhell E16"
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 60.1782461,
+    "lng": 11.5158002,
+    "time": "Thu Apr 02 18:43:33 +0000 2020",
+    "tweet_content": "I\u00d8BR er p\u00e5 pipebrann Wergelandsveien Askim"
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 60.1782461,
+    "lng": 11.5158002,
+    "time": "Thu Apr 02 18:42:35 +0000 2020",
+    "tweet_content": "I\u00d8BR Askim har sjekket et branntill\u00f8p Tr\u00f8gstadveien. Kontroll p\u00e5 stedet."
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 60.1534263,
+    "lng": 11.4159705,
+    "time": "Wed Apr 01 14:30:12 +0000 2020",
+    "tweet_content": "#Vormsund. \u00d8RB rykker ut til K\u00e5rudvegen. Br\u00e5tebrann."
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 59.8142543,
+    "lng": 10.8185879,
+    "time": "Wed Apr 01 10:33:19 +0000 2020",
+    "tweet_content": "#T\u00e5rn\u00e5sen. Follo bv er i Gjallarveien. Aba."
+  },
+  {
+    "screen_name": "Ost110Sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/983685140466556928/TFK_b8Lr_normal.jpg",
+    "twitter_url": "https://twitter.com/Ost110Sentral",
+    "account_name": "\u00d8st 110-sentral",
+    "lat": 60.1144384,
+    "lng": 10.8495216,
+    "time": "Wed Apr 01 06:21:47 +0000 2020",
+    "tweet_content": "#Nittedal. NRBR rykket ut til Stasjonsveien. Innvendig vannlekkasje."
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Fri Apr 03 09:01:00 +0000 2020",
+    "tweet_content": "#Oslo E18, inng\u00e5ende retning, Frognerstranda.  Sammenst\u00f8t mellom buss og to personbiler. Mye k\u00f8 p\u00e5 stedet, men inge\u2026 https://t.co/nOHOtyvihW"
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Thu Apr 02 22:39:52 +0000 2020",
+    "tweet_content": "En mann er kj\u00f8rt sykehus med alvorlige/ kritiske skader etter  \u00e5 ha blitt stukket med kniv.  En kvinne er p\u00e5grepet\u2026 https://t.co/bqoPkIOX65"
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Thu Apr 02 22:13:22 +0000 2020",
+    "tweet_content": "#Oslo. Vi er med flere patruljer p\u00e5 en adresse i Christian Michelsens gate, etter melding om at en person skulle v\u00e6\u2026 https://t.co/BQT49Zf8IU"
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Thu Apr 02 20:34:21 +0000 2020",
+    "tweet_content": "#Oslo N\u00f8detatene er i Wergelandsveien etter at det ble meldt om r\u00f8ykutvikling. Var en liten brann i en s\u00f8ppelb\u00f8tte\u2026 https://t.co/njslKbSEoI"
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Thu Apr 02 16:31:46 +0000 2020",
+    "tweet_content": "#Oslo Lilleaker. Vi er p\u00e5 stedet med flere patruljer etter melding om en ordensforstyrrelsen, hvor det har blitt fr\u2026 https://t.co/f6uxi7u1qE"
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Thu Apr 02 11:24:28 +0000 2020",
+    "tweet_content": "Saknede er til rette."
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Thu Apr 02 10:40:35 +0000 2020",
+    "tweet_content": "#Oslo. Tollbugata. Melding om takplate som har l\u00f8snet i vinden og bl\u00e5st ned p\u00e5 gaten. Politi og brannvesen er p\u00e5 vei til stedet."
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9574233,
+    "lng": 10.4786125,
+    "time": "Thu Apr 02 09:54:23 +0000 2020",
+    "tweet_content": "#B\u00e6rum. Jernbaneveien. Vi leter etter en eldre mann med demens. Han er 174 cm, har bl\u00e5 \u00f8yne og hvitt h\u00e5r. Han er if\u2026 https://t.co/HnfE11YRnc"
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9574233,
+    "lng": 10.4786125,
+    "time": "Thu Apr 02 08:16:14 +0000 2020",
+    "tweet_content": "Vi jobber med vitneavh\u00f8r og \u00e5stedsunders\u00f8kelse. Samtidig har vi et p\u00e5g\u00e5ende s\u00f8k etter involverte biler og personer."
+  },
+  {
+    "screen_name": "oslopolitiops",
+    "profile_pic": "https://pbs.twimg.com/profile_images/808920732264763392/QplPini7_normal.jpg",
+    "twitter_url": "https://twitter.com/oslopolitiops",
+    "account_name": "OPS Politiet Oslo",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Thu Apr 02 07:51:52 +0000 2020",
+    "tweet_content": "#Oslo. Observatorie terrasse. Vi har flere enheter p\u00e5 stedet i forbindelse med at det er l\u00f8snet skudd, trolig mot e\u2026 https://t.co/UIuYOIKUzP"
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Fri Apr 03 09:06:44 +0000 2020",
+    "tweet_content": "#OBRE Frognerstranda, Briskeby og Hovedstasjonen er p\u00e5 trafikkulykke med flere biler involvert."
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Thu Apr 02 20:27:05 +0000 2020",
+    "tweet_content": "#Oslo Brannvesenet er i Wergelandsveien, r\u00f8ykutvikling i bygning"
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Wed Apr 01 12:37:54 +0000 2020",
+    "tweet_content": "Her var det noen som brant b\u00e5l, de slukker dette selv"
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.7511875,
+    "lng": 10.4284602,
+    "time": "Wed Apr 01 12:27:53 +0000 2020",
+    "tweet_content": "#Asker Brannvesenet er p\u00e5 vei til Nesbukta, etter meding om r\u00f8yk i omr\u00e5det"
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Wed Apr 01 10:07:24 +0000 2020",
+    "tweet_content": "#Oslo Vi er i Karl Johans Gate hvor det har v\u00e6rt brann i en innvendig s\u00f8ppelcontainer. Den var slukket av noen p\u00e5 stedet f\u00f8r v\u00e5r ankomst"
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Wed Apr 01 02:47:11 +0000 2020",
+    "tweet_content": "#ABBR E134, R\u00f8yken rykker ut p\u00e5 trafikkulykke."
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Tue Mar 31 19:35:56 +0000 2020",
+    "tweet_content": "Vi er framme p\u00e5 adressen. Her har beboer gjort en god jobb med \u00e5 slukke branntill\u00f8pet selv. Vi g\u00e5r over med IR-kame\u2026 https://t.co/RYCgttSUpR"
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Tue Mar 31 19:23:10 +0000 2020",
+    "tweet_content": "#Oslo Brannvesenet er p\u00e5 vei til Lunnestien for \u00e5 kontrollere et branntill\u00f8p i en lampe."
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Tue Mar 31 09:43:27 +0000 2020",
+    "tweet_content": "#Oslo Brannvesenet er p\u00e5 vei til bilbrann i Kjels\u00e5sveien"
+  },
+  {
+    "screen_name": "Oslo110sentral",
+    "profile_pic": "https://pbs.twimg.com/profile_images/834044810730299392/ohBgZ7SG_normal.jpg",
+    "twitter_url": "https://twitter.com/Oslo110sentral",
+    "account_name": "Oslo 110-sentral",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Tue Mar 31 06:53:59 +0000 2020",
+    "tweet_content": "#Oslo Brannvesenet er p\u00e5 trafikkulykke p\u00e5 \u00d8kern. Ingen alvorlig personskade."
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Tue Mar 31 14:43:26 +0000 2020",
+    "tweet_content": "Karasjok BV har rykket ut til trafikkulykke mellom Karasjok og Tana."
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Sat Mar 28 13:46:06 +0000 2020",
+    "tweet_content": "Hammerfest Brann og Redning melder om STOR skredfare s\u00f8r og \u00f8st vendte hellinger ved Jansvannet."
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Fri Mar 27 14:09:21 +0000 2020",
+    "tweet_content": "Hammerfest BV rykket ut med tre enheter p\u00e5 skredet p\u00e5 Skaidi. To enheter fra Hammerfest og en enhet fra Kvalsund."
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Sat Mar 21 13:38:27 +0000 2020",
+    "tweet_content": "Hammerfest bv er ute \u00e5 sjekker kommunale bygg for sn\u00f8 og  is tapper , vi oppfordre alle hus/g\u00e5rd eiere \u00e5 sjekke eiendommen sin."
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Mon Mar 16 14:11:48 +0000 2020",
+    "tweet_content": "RT @VtsNord: Det mest fornuftige vi kan anmode bilistene om i dag, er \u00e5 la bilen st\u00e5.\nDet er full storm i store deler av landsdelen-  og ma\u2026"
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Fri Mar 06 08:27:36 +0000 2020",
+    "tweet_content": "OBS. Det melder varmere v\u00e6r, Alle g\u00e5rdeiere m\u00e5 p\u00e5se at det ikke faller is/sn\u00f8 ned fra sine tak."
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Wed Mar 04 16:28:48 +0000 2020",
+    "tweet_content": "S\u00f8r-Varanger BV deltar p\u00e5 \u00f8velse med lokasjon elevhjemmet i Hessengveien"
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Sun Feb 23 09:10:59 +0000 2020",
+    "tweet_content": "Hammerfest Brann og redning informerer at deler av l\u00f8ype 3 \u00d8sterdalen Hammerfest kommune er stengt grunnet skredfare!"
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 59.9138688,
+    "lng": 10.7522454,
+    "time": "Sun Feb 23 08:00:48 +0000 2020",
+    "tweet_content": "Hammerfest Brann og Redning kj\u00f8rer ut p\u00e5 meldinger om skredfare og tidligere skred g\u00e5tt i Fjordadalen. \nVil bli tatt m\u00e5linger p\u00e5 stedet."
+  },
+  {
+    "screen_name": "110Finnmark",
+    "profile_pic": "https://pbs.twimg.com/profile_images/624167866590494720/X8Y2fD5K_normal.jpg",
+    "twitter_url": "https://twitter.com/110Finnmark",
+    "account_name": "110 Finnmark",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Thu Feb 20 12:00:41 +0000 2020",
+    "tweet_content": "RT @politifinnmark: #Hammerfest: kl. 1235: melding om r\u00f8ykutvikling i en enebolig p\u00e5 Nybakken. Brann var v\u00e6rt inne p\u00e5 stedet. Ingen brann,\u2026"
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Thu Apr 02 17:35:18 +0000 2020",
+    "tweet_content": "Kontroll p\u00e5 stedet, Lekasje av diesel var \u00e5rsaken til r\u00f8ykutvikling. https://t.co/MZLZxrPbkn"
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Thu Apr 02 17:14:19 +0000 2020",
+    "tweet_content": "Ytre Helgeland brann og redning, Sandnessj\u00f8en: Melding om r\u00f8ykutvikling fra b\u00e5t. Brannvesenet er p\u00e5 stedet."
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Tue Mar 31 11:17:40 +0000 2020",
+    "tweet_content": "Lofoten brann- og redningsvesen, Leknes: Melding om brann i traktor p\u00e5 Ner-Voll. Brannvesenet er p\u00e5 stedet."
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Sun Mar 29 04:50:29 +0000 2020",
+    "tweet_content": "Salten Brann IKS, Bod\u00f8: Melding om brann i kj\u00f8ret\u00f8y  ved Linken. Brannvesenet er p\u00e5 vei."
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Sat Mar 28 07:27:08 +0000 2020",
+    "tweet_content": "Oppdatering: Fullt utviklet brann. Brannvesenet bedriver utvendig slukking for begrensing. https://t.co/nmFoBbMMNJ"
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Sat Mar 28 06:09:27 +0000 2020",
+    "tweet_content": "Salten Brann IKS, Bod\u00f8: Melding om brann i bygning. Brannvesenet er p\u00e5 vei."
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Thu Mar 26 16:50:55 +0000 2020",
+    "tweet_content": "Vefsn brann- og redning: Brannvesenet sjekker ut en automatisk brannalarm."
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Thu Mar 26 15:36:19 +0000 2020",
+    "tweet_content": "Brannen slokket. Brannvesenet returnerer."
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Thu Mar 26 14:34:26 +0000 2020",
+    "tweet_content": "Salten Brann IKS, Bod\u00f8: Melding om brann i bygning. Brannvesenet er p\u00e5 vei."
+  },
+  {
+    "screen_name": "110Bodo",
+    "profile_pic": "https://pbs.twimg.com/profile_images/484772503647047681/9iyAyrOG_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Bodo",
+    "account_name": "110 Nordland",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Wed Mar 25 14:16:42 +0000 2020",
+    "tweet_content": "Avklart. Ingen brann."
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Fri Apr 03 09:17:33 +0000 2020",
+    "tweet_content": "BVS Kvinesdal kj\u00f8rer p\u00e5 trafikkulykke Fjotlandsveien.\nPersonbil mot lastebil, ingen fastklemte."
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Fri Apr 03 06:48:43 +0000 2020",
+    "tweet_content": "Avklart, teknisk feil"
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Fri Apr 03 06:44:21 +0000 2020",
+    "tweet_content": "KBR Kristiansand rykker ut p\u00e5 ABA Bispegra"
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Fri Apr 03 06:32:37 +0000 2020",
+    "tweet_content": "Avklart, manuell melder utl\u00f8st ved ett uhell"
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Fri Apr 03 06:27:21 +0000 2020",
+    "tweet_content": "Setesdal brannvesen Iveland rykker ut p\u00e5 ABA Frikstadveien"
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 70.5308038,
+    "lng": 23.5717079,
+    "time": "Fri Apr 03 05:14:22 +0000 2020",
+    "tweet_content": "Branntill\u00f8p i en leilighet, delvis slukket av sprinkleranlegget.\nEn person i leiligheten har f\u00e5tt i seg litt r\u00f8yk o\u2026 https://t.co/B7hHu0yIzi"
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 58.1599119,
+    "lng": 8.0182064,
+    "time": "Fri Apr 03 04:55:29 +0000 2020",
+    "tweet_content": "#Kristiansand kl 06:54 Brannvesenet kj\u00f8rer p\u00e5 ABA i L\u00f8kkeveien"
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 58.1599119,
+    "lng": 8.0182064,
+    "time": "Fri Apr 03 02:47:17 +0000 2020",
+    "tweet_content": "Avklart en manuell melder trykt inn ved et uhell."
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 58.1599119,
+    "lng": 8.0182064,
+    "time": "Fri Apr 03 02:36:07 +0000 2020",
+    "tweet_content": "#Kristiansand kl 04:34 Brannvesenet kj\u00f8rer p\u00e5 ABA i V\u00e5gsbygd veien"
+  },
+  {
+    "screen_name": "110Agder",
+    "profile_pic": "https://pbs.twimg.com/profile_images/2301577177/42em8omube6yvsy27j9v_normal.jpeg",
+    "twitter_url": "https://twitter.com/110Agder",
+    "account_name": "110 Agder",
+    "lat": 58.1599119,
+    "lng": 8.0182064,
+    "time": "Thu Apr 02 20:51:29 +0000 2020",
+    "tweet_content": "Avklart, matlaging \u00e5rsak til alarm."
+  }
 ]
