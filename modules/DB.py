@@ -22,9 +22,11 @@ class DB:
     try:
       self.connection = psycopg2.connect(user = self.config_param['user'],password = self.config_param['passwd'],host = self.config_param['host'],port = self.config_param['port'],database = self.config_param['dbname'])
 
+    # Catch connection error and print error message
     except psycopg2.OperationalError as error_message:
       print('Failed: Connecting to database.')
 
+    # Set up an connection cursor
     else:
       self.cursor = self.connection.cursor()
       self.connected = True
@@ -32,8 +34,14 @@ class DB:
 
   def close(self):
     """ Close the PostgreSQL database connection. """
+
+    # Close connection cursor
     self.cursor.close()
+
+    # Close connection
     self.connection.close()
+
+    # Set connected to `false`
     self.connected = False
 
 
@@ -55,21 +63,29 @@ class DB:
     for key, value in dsn_parameters.items():
       print("{}: {}".format(key, value))
 
+    # Close database connection
     self.close()
 
   def execute(self, statement, values=None):
     """ Execute database query. """
+    
+    # Check if connection exists
     if self.connected:
+
+      # Try to execute the statement
       try:
         self.cursor.execute(statement, (values))
 
+      # Catch error message and print it
       except psycopg2.Error as error_msg:
         print(error_msg)
 
+      # Check if the statement is a `SELECT` statement or not, if yes; return selected data
       if statement.upper().startswith('SELECT'):
         data = self.cursor.fetchall()
         return data
 
+      # If not, commit changes (such as UPDATE, DELETE, INSERT)
       else:
         self.connection.commit()
         return(self.cursor.rowcount)
