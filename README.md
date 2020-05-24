@@ -7,4 +7,6 @@ The project is to connect Twitter API with a PostgreSQL database and using Googl
 We have used Python backend with a database, and connecting this to the frontend we've used JavaScript JSON structure.
 
 ## Demo of finished product
-<img src="https://raw.githubusercontent.com/orjanj/twitter-incident-visualizer/master/examples/Googlemaps.PNG?token=ALK6TODMR6GJZENK3CEHJ4K6ZJYUA" alt="Google Map with pins" />
+Graphical demonstration: https://github.com/orjanj/twitter-incident-visualizer/blob/master/examples/Googlemaps.PNG
+
+Video demonstration: https://github.com/orjanj/twitter-incident-visualizer/blob/master/examples/map_preview.mp4?raw=true
