@@ -6,11 +6,11 @@ postgresql:
   port: 5432
 
 twitter:
-  consumer_key: Err7UwBle9Q6oVHwzfCygGnG2
-  consumer_secret: k4acSlMEgg7UCo0FvPKwt14LIuDM8wk4oT4UuivgtmOtqGbN10
-  access_token_key: 1216480282192285696-3FTTZbSr0ZRletE4wkAW6g2nS7XO46
-  access_token_secret: 3VnrbENbyP0ax89nyAHlud8e3Lifhc4CnnULZmsZbWI5o
-  screen_name: incidentvisual1
+  consumer_key: insert_consumer_key_here
+  consumer_secret: insert_consumer_secret_here
+  access_token_key: insert_access_token_key_here
+  access_token_secret: insert_access_token_secret_here
+  screen_name: insert_screen_name_here
 
 twitter-mine:
   mine_followers: True
@@ -19,7 +19,7 @@ twitter-mine:
   mine_tweet_count: 10
 
 gmaps:
-  api_key: AIzaSyCSx31rj9HHzmpuFwo6KqoB7Cx4MWsBr0Q
+  api_key: insert_google_maps_api_key_here
   country: Norway
 
 tweet_storage:
