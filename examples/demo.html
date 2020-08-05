@@ -38,7 +38,6 @@ var time = 'Wed Apr 01 19:55:31 +0000 2020'
 function getTimeTest(time){
   var oldDate = new Date(time)
   var todayDate = new Date()
-
 }
 
 (function() {
@@ -53,7 +52,7 @@ function getTimeTest(time){
       });
       
       // Creating a global infoWindow object that will be reused by all markers
-		  var infoWindow = new google.maps.InfoWindow();
+      var infoWindow = new google.maps.InfoWindow();
 
       for (var i = 0, length = json.length; i < length; i++) {
         var data = json[i],
