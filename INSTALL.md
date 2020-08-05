@@ -163,15 +163,13 @@ root@host:/var/www# chown -hR <your user>:<your group, same as username as usual
 ```
 root@host:/var/www/html# git clone https://github.com/orjanj/twitter-incident-visualizer.git
 ```
-19. Run interface.py to generate JSON structure 
+19. Run interface.py to generate JSON structure (output file is `examples/web_application.json`)
 ```
-generate web_application.json (for use on web app) run python3 interface.py
+root@host:/var/www/html# python3 interface.py
 ```
-20. In config.JAML you can change the settings 
-```
-Change settings if needed
-```
+20. In `config.yaml` you can change the settings 
+
 21. To access the demo site, open demo.html in your browser
 ```
-Localhost or IP of your server/PC /twitter-incident-visualizer/examples/demo.html
+<http/https>://<Localhost or IP of your server>/twitter-incident-visualizer/examples/demo.html
 ```
