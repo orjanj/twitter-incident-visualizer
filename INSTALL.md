@@ -19,7 +19,7 @@ root@host:~# apt-get update && apt-get install apache2 git python3 postgresql po
 
 3. Add a Linux user for use with this project. Let's call the user ``tiv`` and set a password.
 ```
-root@host:~# useradd -m -d /home/tiv -s /bin/bash tiv && passwd tiv``
+root@host:~# useradd -m -d /home/tiv -s /bin/bash tiv && passwd tiv
 ```
 
 4. Get key for PostgreSQL and add it to the apt key sources keyring.
