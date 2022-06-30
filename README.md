@@ -1,19 +1,20 @@
 # twitter-incident-visualizer
 
-This is a school project by <a href="https://github.com/orjanj">Ørjan Jacobsen</a> ([Cyber Security](https://www.noroff.no/en/studies/university-college/cyber-security)), <a href="https://github.com/palarssen">Pål Larssen</a> ([Cyber Security](https://www.noroff.no/en/studies/university-college/cyber-security)) and <a href="https://github.com/dansolb">Dan Solberg</a> ([Digital Forensics](https://www.noroff.no/en/studies/university-college/digital-forensics)).
+This is a school project by [Ørjan Jacobsen](https://github.com/orjanj) ([Cyber Security](https://www.noroff.no/en/studies/university-college/cyber-security)), [Pål Larssen](https://github.com/palarssen) ([Cyber Security](https://www.noroff.no/en/studies/university-college/cyber-security)) and [Dan Solberg](https://github.com/dansolb) ([Digital Forensics](https://www.noroff.no/en/studies/university-college/digital-forensics)).
 This project provides a visual event pinpointer in Google Maps, where Tweets would be localized.
 
-The project connects to the Twitter API with a PostgreSQL database and using Google Maps API to visualise location of events.
+The project connects to the Twitter API with a PostgreSQL database and using Google Maps API to plot locations of events.
 We have used Python backend with a database, and connecting this to the frontend we've used JavaScript JSON structure.
 
 ## Demo of finished product
-Graphical demonstration: https://github.com/orjanj/twitter-incident-visualizer/blob/master/examples/Googlemaps.PNG
 
-Video demonstration: https://github.com/orjanj/twitter-incident-visualizer/blob/master/examples/map_preview.mp4?raw=true
+
+
+https://user-images.githubusercontent.com/47573432/176796788-d6da2c9e-7165-4bcd-8810-0b692e5f641f.mp4
+
 
 ## Installing the application
 Please read the [installation manual](https://github.com/orjanj/twitter-incident-visualizer/blob/master/INSTALL.md).
-
 
 
 ## Nice to know
